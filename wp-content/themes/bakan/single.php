@@ -1,0 +1,1 @@
+<?php bakan_content_detail_check() ?>
