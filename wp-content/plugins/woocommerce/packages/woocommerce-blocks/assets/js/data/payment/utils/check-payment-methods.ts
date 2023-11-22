@@ -2,7 +2,6 @@
  * External dependencies
  */
 import {
-	CanMakePaymentArgument,
 	ExpressPaymentMethodConfigInstance,
 	PaymentMethodConfigInstance,
 } from '@woocommerce/types';
@@ -32,12 +31,54 @@ import {
 } from '../../../data/constants';
 import { defaultCartState } from '../../../data/cart/default-state';
 
-/**
- * Get the argument that will be passed to a payment method's `canMakePayment` method.
- */
-export const getCanMakePaymentArg = (): CanMakePaymentArgument => {
+const registrationErrorNotice = (
+	paymentMethod:
+		| ExpressPaymentMethodConfigInstance
+		| PaymentMethodConfigInstance,
+	errorMessage: string,
+	express = false
+) => {
+	const { createErrorNotice } = dispatch( 'core/notices' );
+	const noticeContext = express
+		? noticeContexts.EXPRESS_PAYMENTS
+		: noticeContexts.PAYMENTS;
+	const errorText = sprintf(
+		/* translators: %s the id of the payment method being registered (bank transfer, cheque...) */
+		__(
+			`There was an error registering the payment method with id '%s': `,
+			'woo-gutenberg-products-block'
+		),
+		paymentMethod.paymentMethodId
+	);
+	createErrorNotice( `${ errorText } ${ errorMessage }`, {
+		context: noticeContext,
+		id: `wc-${ paymentMethod.paymentMethodId }-registration-error`,
+	} );
+};
+
+export const checkPaymentMethodsCanPay = async ( express = false ) => {
 	const isEditor = !! select( 'core/editor' );
-	let canPayArgument: CanMakePaymentArgument;
+
+	let availablePaymentMethods = {};
+
+	const paymentMethods = express
+		? getExpressPaymentMethods()
+		: getPaymentMethods();
+
+	const addAvailablePaymentMethod = (
+		paymentMethod:
+			| PaymentMethodConfigInstance
+			| ExpressPaymentMethodConfigInstance
+	) => {
+		const { name } = paymentMethod;
+		availablePaymentMethods = {
+			...availablePaymentMethods,
+			[ paymentMethod.name ]: { name },
+		};
+	};
+
+	let cartForCanPayArgument: Record< string, unknown > = {};
+	let canPayArgument: Record< string, unknown > = {};
 
 	if ( ! isEditor ) {
 		const store = select( CART_STORE_KEY );
@@ -50,7 +91,7 @@ export const getCanMakePaymentArg = (): CanMakePaymentArgument => {
 			cart.shippingRates
 		);
 
-		const cartForCanPayArgument = {
+		cartForCanPayArgument = {
 			cartCoupons: cart.coupons,
 			cartItems: cart.items,
 			crossSellsProducts: cart.crossSells,
@@ -85,7 +126,7 @@ export const getCanMakePaymentArg = (): CanMakePaymentArgument => {
 			paymentRequirements: cart.paymentRequirements,
 		};
 	} else {
-		const cartForCanPayArgument = {
+		cartForCanPayArgument = {
 			cartCoupons: previewCart.coupons,
 			cartItems: previewCart.items,
 			crossSellsProducts: previewCart.cross_sells,
@@ -110,8 +151,8 @@ export const getCanMakePaymentArg = (): CanMakePaymentArgument => {
 		};
 		canPayArgument = {
 			cart: cartForCanPayArgument,
-			cartTotals: cartForCanPayArgument.cartTotals,
-			cartNeedsShipping: cartForCanPayArgument.cartNeedsShipping,
+			cartTotals: cartForCanPayArgument.totals,
+			cartNeedsShipping: cartForCanPayArgument.needsShipping,
 			billingData: cartForCanPayArgument.billingAddress,
 			billingAddress: cartForCanPayArgument.billingAddress,
 			shippingAddress: cartForCanPayArgument.shippingAddress,
@@ -123,53 +164,6 @@ export const getCanMakePaymentArg = (): CanMakePaymentArgument => {
 		};
 	}
 
-	return canPayArgument;
-};
-
-const registrationErrorNotice = (
-	paymentMethod:
-		| ExpressPaymentMethodConfigInstance
-		| PaymentMethodConfigInstance,
-	errorMessage: string,
-	express = false
-) => {
-	const { createErrorNotice } = dispatch( 'core/notices' );
-	const noticeContext = express
-		? noticeContexts.EXPRESS_PAYMENTS
-		: noticeContexts.PAYMENTS;
-	const errorText = sprintf(
-		/* translators: %s the id of the payment method being registered (bank transfer, cheque...) */
-		__(
-			`There was an error registering the payment method with id '%s': `,
-			'woo-gutenberg-products-block'
-		),
-		paymentMethod.paymentMethodId
-	);
-	createErrorNotice( `${ errorText } ${ errorMessage }`, {
-		context: noticeContext,
-		id: `wc-${ paymentMethod.paymentMethodId }-registration-error`,
-	} );
-};
-
-export const checkPaymentMethodsCanPay = async ( express = false ) => {
-	let availablePaymentMethods = {};
-
-	const paymentMethods = express
-		? getExpressPaymentMethods()
-		: getPaymentMethods();
-
-	const addAvailablePaymentMethod = (
-		paymentMethod:
-			| PaymentMethodConfigInstance
-			| ExpressPaymentMethodConfigInstance
-	) => {
-		const { name } = paymentMethod;
-		availablePaymentMethods = {
-			...availablePaymentMethods,
-			[ paymentMethod.name ]: { name },
-		};
-	};
-
 	// Order payment methods.
 	const paymentMethodsOrder = express
 		? Object.keys( paymentMethods )
@@ -179,9 +173,7 @@ export const checkPaymentMethodsCanPay = async ( express = false ) => {
 					...Object.keys( paymentMethods ),
 				] )
 		  );
-	const canPayArgument = getCanMakePaymentArg();
 	const cartPaymentMethods = canPayArgument.paymentMethods as string[];
-	const isEditor = !! select( 'core/editor' );
 
 	for ( let i = 0; i < paymentMethodsOrder.length; i++ ) {
 		const paymentMethodName = paymentMethodsOrder[ i ];

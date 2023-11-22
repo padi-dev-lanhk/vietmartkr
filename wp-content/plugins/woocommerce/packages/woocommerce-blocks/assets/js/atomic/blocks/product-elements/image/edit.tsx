@@ -33,7 +33,6 @@ import {
 	BLOCK_DESCRIPTION as description,
 } from './constants';
 import { BlockAttributes, ImageSizing } from './types';
-import { ImageSizeSettings } from './image-size-settings';
 
 type SaleBadgeAlignProps = 'left' | 'center' | 'right';
 
@@ -42,16 +41,9 @@ const Edit = ( {
 	setAttributes,
 	context,
 }: BlockEditProps< BlockAttributes > & { context: Context } ): JSX.Element => {
-	const {
-		showProductLink,
-		imageSizing,
-		showSaleBadge,
-		saleBadgeAlign,
-		width,
-		height,
-		scale,
-	} = attributes;
-	const blockProps = useBlockProps( { style: { width, height } } );
+	const { showProductLink, imageSizing, showSaleBadge, saleBadgeAlign } =
+		attributes;
+	const blockProps = useBlockProps();
 	const isDescendentOfQueryLoop = Number.isFinite( context.queryId );
 	const isBlockThemeEnabled = getSettingWithCoercion(
 		'is_block_theme_enabled',
@@ -67,12 +59,6 @@ const Edit = ( {
 	return (
 		<div { ...blockProps }>
 			<InspectorControls>
-				<ImageSizeSettings
-					scale={ scale }
-					width={ width }
-					height={ height }
-					setAttributes={ setAttributes }
-				/>
 				<PanelBody
 					title={ __( 'Content', 'woo-gutenberg-products-block' ) }
 				>

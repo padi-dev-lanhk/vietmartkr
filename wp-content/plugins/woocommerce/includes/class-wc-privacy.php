@@ -381,14 +381,7 @@ class WC_Privacy extends WC_Abstract_Privacy {
 			}
 
 			foreach ( $user_ids as $user_id ) {
-				wp_delete_user( $user_id, 0 );
-				wc_get_logger()->info(
-					sprintf(
-						/* translators: %d user ID. */
-						__( "User #%d was deleted by WooCommerce in accordance with the site's personal data retention settings. Any content belonging to that user has been retained but unassigned.", 'woocommerce' ),
-						$user_id
-					)
-				);
+				wp_delete_user( $user_id );
 				$count ++;
 			}
 		}

@@ -17,8 +17,8 @@ import {
 /**
  * Internal dependencies
  */
-import { defaultPlaceOrderButtonLabel } from './constants';
 import './style.scss';
+import { defaultPlaceOrderButtonLabel } from './constants';
 
 const Block = ( {
 	cartPageId,
@@ -53,10 +53,7 @@ const Block = ( {
 						link={ getSetting( 'page-' + cartPageId, false ) }
 					/>
 				) }
-				<PlaceOrderButton
-					label={ label }
-					fullWidth={ ! showReturnToCart }
-				/>
+				<PlaceOrderButton label={ label } />
 			</div>
 		</div>
 	);

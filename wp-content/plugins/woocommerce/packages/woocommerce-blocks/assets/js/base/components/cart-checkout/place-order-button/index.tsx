@@ -1,20 +1,15 @@
 /**
  * External dependencies
  */
-import classnames from 'classnames';
 import { useCheckoutSubmit } from '@woocommerce/base-context/hooks';
 import { Icon, check } from '@wordpress/icons';
 import Button from '@woocommerce/base-components/button';
 
 interface PlaceOrderButton {
 	label: string;
-	fullWidth?: boolean | undefined;
 }
 
-const PlaceOrderButton = ( {
-	label,
-	fullWidth = false,
-}: PlaceOrderButton ): JSX.Element => {
+const PlaceOrderButton = ( { label }: PlaceOrderButton ): JSX.Element => {
 	const {
 		onSubmit,
 		isCalculating,
@@ -25,13 +20,7 @@ const PlaceOrderButton = ( {
 
 	return (
 		<Button
-			className={ classnames(
-				'wc-block-components-checkout-place-order-button',
-				{
-					'wc-block-components-checkout-place-order-button--full-width':
-						fullWidth,
-				}
-			) }
+			className="wc-block-components-checkout-place-order-button"
 			onClick={ onSubmit }
 			disabled={
 				isCalculating ||

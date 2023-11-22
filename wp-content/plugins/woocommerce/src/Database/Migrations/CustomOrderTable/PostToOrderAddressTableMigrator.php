@@ -6,7 +6,6 @@
 namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
 
 use Automattic\WooCommerce\Database\Migrations\MetaToCustomTableMigrator;
-use Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore;
 
 /**
  * Helper class to migrate records from the WordPress post table
@@ -39,14 +38,21 @@ class PostToOrderAddressTableMigrator extends MetaToCustomTableMigrator {
 	 */
 	protected function get_schema_config(): array {
 		global $wpdb;
+		// TODO: Remove hardcoding.
+		$table_names = array(
+			'orders'    => $wpdb->prefix . 'wc_orders',
+			'addresses' => $wpdb->prefix . 'wc_order_addresses',
+			'op_data'   => $wpdb->prefix . 'wc_order_operational_data',
+			'meta'      => $wpdb->prefix . 'wc_orders_meta',
+		);
 
 		return array(
 			'source'      => array(
 				'entity' => array(
-					'table_name'             => $wpdb->posts,
-					'meta_rel_column'        => 'ID',
-					'destination_rel_column' => 'ID',
-					'primary_key'            => 'ID',
+					'table_name'             => $table_names['orders'],
+					'meta_rel_column'        => 'id',
+					'destination_rel_column' => 'id',
+					'primary_key'            => 'id',
 				),
 				'meta'   => array(
 					'table_name'        => $wpdb->postmeta,
@@ -57,7 +63,7 @@ class PostToOrderAddressTableMigrator extends MetaToCustomTableMigrator {
 				),
 			),
 			'destination' => array(
-				'table_name'        => OrdersTableDataStore::get_addresses_table_name(),
+				'table_name'        => $table_names['addresses'],
 				'source_rel_column' => 'order_id',
 				'primary_key'       => 'id',
 				'primary_key_type'  => 'int',
@@ -74,7 +80,7 @@ class PostToOrderAddressTableMigrator extends MetaToCustomTableMigrator {
 		$type = $this->type;
 
 		return array(
-			'ID'   => array(
+			'id'   => array(
 				'type'        => 'int',
 				'destination' => 'order_id',
 			),

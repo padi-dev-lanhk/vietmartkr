@@ -2,7 +2,6 @@
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
 
 use WP_Query;
-use Automattic\WooCommerce\Blocks\Utils\Utils;
 
 // phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_tax_query
 // phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_query
@@ -77,19 +76,18 @@ class ProductQuery extends AbstractBlock {
 	}
 
 	/**
-	 * Post Template support for grid view was introduced in Gutenberg 16 / WordPress 6.3
-	 * Fixed in:
-	 * - https://github.com/woocommerce/woocommerce-blocks/pull/9916
-	 * - https://github.com/woocommerce/woocommerce-blocks/pull/10360
+	 * Extra data passed through from server to client for block.
+	 *
+	 * @param array $attributes  Any attributes that currently are available from the block.
+	 *                           Note, this will be empty in the editor context when the block is
+	 *                           not in the post content on editor load.
 	 */
-	private function check_if_post_template_has_support_for_grid_view() {
-		if ( Utils::wp_version_compare( '6.3', '>=' ) ) {
-			return true;
-		}
+	protected function enqueue_data( array $attributes = [] ) {
+		parent::enqueue_data( $attributes );
+
+		$gutenberg_version = '';
 
 		if ( is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
-			$gutenberg_version = '';
-
 			if ( defined( 'GUTENBERG_VERSION' ) ) {
 				$gutenberg_version = GUTENBERG_VERSION;
 			}
@@ -101,27 +99,11 @@ class ProductQuery extends AbstractBlock {
 				);
 				$gutenberg_version = $gutenberg_data['Version'];
 			}
-			return version_compare( $gutenberg_version, '16.0', '>=' );
 		}
-
-		return false;
-	}
-
-	/**
-	 * Extra data passed through from server to client for block.
-	 *
-	 * @param array $attributes  Any attributes that currently are available from the block.
-	 *                           Note, this will be empty in the editor context when the block is
-	 *                           not in the post content on editor load.
-	 */
-	protected function enqueue_data( array $attributes = [] ) {
-		parent::enqueue_data( $attributes );
-
-		$post_template_has_support_for_grid_view = $this->check_if_post_template_has_support_for_grid_view();
 
 		$this->asset_data_registry->add(
 			'post_template_has_support_for_grid_view',
-			$post_template_has_support_for_grid_view
+			version_compare( $gutenberg_version, '16.0', '>=' )
 		);
 	}
 

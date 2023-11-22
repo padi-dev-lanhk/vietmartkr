@@ -927,7 +927,7 @@ function wc_get_theme_support( $prop = '', $default = null ) {
  */
 function wc_get_image_size( $image_size ) {
 	$cache_key = 'size-' . ( is_array( $image_size ) ? implode( '-', $image_size ) : $image_size );
-	$size      = ! is_customize_preview() ? wp_cache_get( $cache_key, 'woocommerce' ) : false;
+	$size      = wp_cache_get( $cache_key, 'woocommerce' );
 
 	if ( $size ) {
 		return $size;
@@ -983,11 +983,8 @@ function wc_get_image_size( $image_size ) {
 
 	$size = apply_filters( 'woocommerce_get_image_size_' . $image_size, $size );
 
-	if ( is_customize_preview() ) {
-		wp_cache_delete( $cache_key, 'woocommerce' );
-	} else {
-		wp_cache_set( $cache_key, $size, 'woocommerce' );
-	}
+	wp_cache_set( $cache_key, $size, 'woocommerce' );
+
 	return $size;
 }
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Large Footer Dark
+ * Title: WooCommerce Large Footer | Dark
  * Slug: woocommerce-blocks/footer-large-dark
  * Categories: WooCommerce
  * Block Types: core/template-part/footer

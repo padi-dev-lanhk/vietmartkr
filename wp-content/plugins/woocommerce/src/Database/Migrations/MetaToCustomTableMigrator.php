@@ -218,28 +218,6 @@ abstract class MetaToCustomTableMigrator extends TableMigrator {
 	}
 
 	/**
-	 * Return data to be migrated for a batch of entities.
-	 *
-	 * @param array $entity_ids Ids of entities to migrate.
-	 *
-	 * @return array[] Data to be migrated. Would be of the form: array( 'data' => array( ... ), 'errors' => array( ... ) ).
-	 */
-	public function fetch_sanitized_migration_data( $entity_ids ) {
-		$this->clear_errors();
-		$data = $this->fetch_data_for_migration_for_ids( $entity_ids );
-
-		foreach ( $data['errors'] as $entity_id => $errors ) {
-			foreach ( $errors as $column_name => $error_message ) {
-				$this->add_error( "Error importing data for post with id $entity_id: column $column_name: $error_message" );
-			}
-		}
-		return array(
-			'data'   => $data['data'],
-			'errors' => $this->get_errors(),
-		);
-	}
-
-	/**
 	 * Migrate a batch of entities from the posts table to the corresponding table.
 	 *
 	 * @param array $entity_ids Ids of entities to migrate.
@@ -247,45 +225,26 @@ abstract class MetaToCustomTableMigrator extends TableMigrator {
 	 * @return void
 	 */
 	protected function process_migration_batch_for_ids_core( array $entity_ids ): void {
-		$data = $this->fetch_sanitized_migration_data( $entity_ids );
-		$this->process_migration_data( $data );
-	}
+		$data = $this->fetch_data_for_migration_for_ids( $entity_ids );
 
-	/**
-	 * Process migration data for a batch of entities.
-	 *
-	 * @param array $data Data to be migrated. Should be of the form: array( 'data' => array( ... ) ) as returned by the `fetch_sanitized_migration_data` method.
-	 *
-	 * @return array Array of errors and exception if any.
-	 */
-	public function process_migration_data( array $data ) {
-		$this->clear_errors();
-		$exception = null;
+		foreach ( $data['errors'] as $entity_id => $errors ) {
+			foreach ( $errors as $column_name => $error_message ) {
+				$this->add_error( "Error importing data for post with id $entity_id: column $column_name: $error_message" );
+			}
+		}
 
 		if ( count( $data['data'] ) === 0 ) {
-			return array(
-				'errors'    => $this->get_errors(),
-				'exception' => null,
-			);
+			return;
 		}
 
-		try {
-			$entity_ids       = array_keys( $data['data'] );
-			$existing_records = $this->get_already_existing_records( $entity_ids );
+		$entity_ids       = array_keys( $data['data'] );
+		$existing_records = $this->get_already_existing_records( $entity_ids );
 
-			$to_insert = array_diff_key( $data['data'], $existing_records );
-			$this->process_insert_batch( $to_insert );
+		$to_insert = array_diff_key( $data['data'], $existing_records );
+		$this->process_insert_batch( $to_insert );
 
-			$to_update = array_intersect_key( $data['data'], $existing_records );
-			$this->process_update_batch( $to_update, $existing_records );
-		} catch ( \Exception $e ) {
-			$exception = $e;
-		}
-
-		return array(
-			'errors'    => $this->get_errors(),
-			'exception' => $exception,
-		);
+		$to_update = array_intersect_key( $data['data'], $existing_records );
+		$this->process_update_batch( $to_update, $existing_records );
 	}
 
 	/**

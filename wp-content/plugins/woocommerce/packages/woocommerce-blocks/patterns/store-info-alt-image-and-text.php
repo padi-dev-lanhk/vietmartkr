@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Alternating Image and Text
+ * Title: WooCommerce Alternating Image and Text
  * Slug: woocommerce-blocks/alt-image-and-text
  * Categories: WooCommerce
  */

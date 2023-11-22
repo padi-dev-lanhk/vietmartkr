@@ -1,7 +1,6 @@
 /**
  * External dependencies
  */
-import classnames from 'classnames';
 import { useRef } from '@wordpress/element';
 import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
@@ -106,14 +105,7 @@ export const Edit = ( {
 						) }
 					</Noninteractive>
 					<EditableButton
-						className={ classnames(
-							'wc-block-cart__submit-button',
-							'wc-block-components-checkout-place-order-button',
-							{
-								'wc-block-components-checkout-place-order-button--full-width':
-									! showReturnToCart,
-							}
-						) }
+						className="wc-block-cart__submit-button wc-block-components-checkout-place-order-button"
 						value={ placeOrderButtonLabel }
 						placeholder={ defaultPlaceOrderButtonLabel }
 						onChange={ ( content ) => {

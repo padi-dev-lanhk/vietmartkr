@@ -73,7 +73,6 @@ class Controller extends GenericController implements ExportableInterface {
 		$args['customers']           = $request['customers'];
 		$args['users']               = $request['users'];
 		$args['force_cache_refresh'] = $request['force_cache_refresh'];
-		$args['filter_empty']        = $request['filter_empty'];
 
 		$between_params_numeric    = array( 'orders_count', 'total_spend', 'avg_order_value' );
 		$normalized_params_numeric = TimeInterval::normalize_between_params( $request, $between_params_numeric, false );
@@ -355,7 +354,6 @@ class Controller extends GenericController implements ExportableInterface {
 				'name',
 				'username',
 				'email',
-				'all',
 			),
 		);
 		$params['name_includes']           = array(
@@ -522,22 +520,6 @@ class Controller extends GenericController implements ExportableInterface {
 			'validate_callback' => 'rest_validate_request_arg',
 			'items'             => array(
 				'type' => 'integer',
-			),
-		);
-		$params['filter_empty']            = array(
-			'description'       => __( 'Filter out results where any of the passed fields are empty', 'woocommerce' ),
-			'type'              => 'array',
-			'validate_callback' => 'rest_validate_request_arg',
-			'items'             => array(
-				'type' => 'string',
-				'enum' => array(
-					'email',
-					'name',
-					'country',
-					'city',
-					'state',
-					'postcode',
-				),
 			),
 		);
 

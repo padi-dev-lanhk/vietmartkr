@@ -126,9 +126,7 @@ jQuery( function ( $ ) {
 				$( 'ul.wc-tabs li', panel_wrap ).removeClass( 'active' );
 				$( this ).parent().addClass( 'active' );
 				$( 'div.panel', panel_wrap ).hide();
-				$( $( this ).attr( 'href' ) ).show( 0, function () {
-					$( this ).trigger( 'woocommerce_tab_shown' );
-				} );
+				$( $( this ).attr( 'href' ) ).show();
 			} );
 			$( 'div.panel-wrap' ).each( function () {
 				$( this )

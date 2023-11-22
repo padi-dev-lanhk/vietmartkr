@@ -11,7 +11,6 @@ defined( 'ABSPATH' ) || exit;
 
 use Automattic\WooCommerce\Admin\Notes\Note;
 use Automattic\WooCommerce\Admin\Notes\Notes;
-use Automattic\WooCommerce\Admin\PageController;
 
 /**
  * Woo_Subscriptions_Notes
@@ -37,7 +36,7 @@ class WooSubscriptionsNotes {
 	 * Hook all the things.
 	 */
 	public function __construct() {
-		add_action( 'admin_head', array( $this, 'admin_head' ) );
+		add_action( 'admin_init', array( $this, 'admin_init' ) );
 		add_action( 'update_option_woocommerce_helper_data', array( $this, 'update_option_woocommerce_helper_data' ), 10, 2 );
 	}
 
@@ -76,16 +75,9 @@ class WooSubscriptionsNotes {
 	}
 
 	/**
-	 * Runs on `admin_head` hook. Checks the connection and refreshes subscription notes on relevant pages.
+	 * Things to do on admin_init.
 	 */
-	public function admin_head() {
-		if ( ! PageController::is_admin_or_embed_page() ) {
-			// To avoid unnecessarily calling Helper API, we only want to refresh subscription notes,
-			// if the request is initiated from the wc admin dashboard or a WC related page which includes
-			// the Activity button in WC header.
-			return;
-		}
-
+	public function admin_init() {
 		$this->check_connection();
 
 		if ( $this->is_connected() ) {

@@ -19,6 +19,8 @@ import { close } from '@wordpress/icons';
 import {
 	useFocusReturn,
 	useFocusOnMount,
+	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis
+	__experimentalUseFocusOutside as useFocusOutside,
 	useConstrainedTabbing,
 	useMergeRefs,
 } from '@wordpress/compose';
@@ -91,6 +93,7 @@ const UnforwardedDrawer = (
 	const focusOnMountRef = useFocusOnMount();
 	const constrainedTabbingRef = useConstrainedTabbing();
 	const focusReturnRef = useFocusReturn();
+	const focusOutsideProps = useFocusOutside( onRequestClose );
 	const contentRef = useRef< HTMLDivElement >( null );
 
 	useEffect( () => {
@@ -145,13 +148,6 @@ const UnforwardedDrawer = (
 				}
 			) }
 			onKeyDown={ handleEscapeKeyDown }
-			onClick={ ( e ) => {
-				// If click was done directly in the overlay element and not one
-				// of its descendants, close the drawer.
-				if ( e.target === ref.current ) {
-					onRequestClose();
-				}
-			} }
 		>
 			<div
 				className={ classNames(
@@ -161,6 +157,7 @@ const UnforwardedDrawer = (
 				ref={ drawerRef }
 				role="dialog"
 				tabIndex={ -1 }
+				{ ...focusOutsideProps }
 			>
 				<div
 					className="wc-block-components-drawer__content"

@@ -76,7 +76,6 @@ export interface ProductSortSelectProps {
 
 export interface ProductListContainerProps {
 	attributes: Attributes;
-	urlParameterSuffix: string | undefined;
 }
 
 export interface NoMatchingProductsProps {

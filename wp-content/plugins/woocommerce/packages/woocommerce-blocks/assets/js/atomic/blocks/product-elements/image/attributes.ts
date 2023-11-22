@@ -37,16 +37,6 @@ export const blockAttributes: BlockAttributes = {
 		type: 'boolean',
 		default: false,
 	},
-	width: {
-		type: 'string',
-	},
-	height: {
-		type: 'string',
-	},
-	scale: {
-		type: 'string',
-		default: 'cover',
-	},
 };
 
 export default blockAttributes;

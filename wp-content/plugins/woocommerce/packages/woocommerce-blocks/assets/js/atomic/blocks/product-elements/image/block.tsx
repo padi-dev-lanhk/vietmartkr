@@ -21,10 +21,9 @@ import ProductSaleBadge from '../sale-badge/block';
 import './style.scss';
 import { BlockAttributes, ImageSizing } from './types';
 
-const ImagePlaceholder = ( props ): JSX.Element => {
+const ImagePlaceholder = (): JSX.Element => {
 	return (
 		<img
-			{ ...props }
 			src={ PLACEHOLDER_IMG_SRC }
 			alt=""
 			width={ undefined }
@@ -46,9 +45,6 @@ interface ImageProps {
 	loaded: boolean;
 	showFullSize: boolean;
 	fallbackAlt: string;
-	scale: string;
-	width?: string | undefined;
-	height?: string | undefined;
 }
 
 const Image = ( {
@@ -56,9 +52,6 @@ const Image = ( {
 	loaded,
 	showFullSize,
 	fallbackAlt,
-	width,
-	scale,
-	height,
 }: ImageProps ): JSX.Element => {
 	const { thumbnail, src, srcset, sizes, alt } = image || {};
 	const imageProps = {
@@ -68,23 +61,13 @@ const Image = ( {
 		...( showFullSize && { src, srcSet: srcset, sizes } ),
 	};
 
-	const imageStyles: Record< string, string | undefined > = {
-		height,
-		width,
-		objectFit: scale,
-	};
-
 	return (
 		<>
 			{ imageProps.src && (
 				/* eslint-disable-next-line jsx-a11y/alt-text */
-				<img
-					style={ imageStyles }
-					data-testid="product-image"
-					{ ...imageProps }
-				/>
+				<img data-testid="product-image" { ...imageProps } />
 			) }
-			{ ! image && <ImagePlaceholder style={ imageStyles } /> }
+			{ ! image && <ImagePlaceholder /> }
 		</>
 	);
 };
@@ -98,9 +81,6 @@ export const Block = ( props: Props ): JSX.Element | null => {
 		showProductLink = true,
 		showSaleBadge,
 		saleBadgeAlign = 'right',
-		height,
-		width,
-		scale,
 		...restProps
 	} = props;
 	const styleProps = useStyleProps( props );
@@ -120,6 +100,7 @@ export const Block = ( props: Props ): JSX.Element | null => {
 					},
 					styleProps.className
 				) }
+				style={ styleProps.style }
 			>
 				<ImagePlaceholder />
 			</div>
@@ -153,6 +134,7 @@ export const Block = ( props: Props ): JSX.Element | null => {
 				},
 				styleProps.className
 			) }
+			style={ styleProps.style }
 		>
 			<ParentComponent { ...( showProductLink && anchorProps ) }>
 				{ !! showSaleBadge && (
@@ -166,9 +148,6 @@ export const Block = ( props: Props ): JSX.Element | null => {
 					image={ image }
 					loaded={ ! isLoading }
 					showFullSize={ imageSizing !== ImageSizing.THUMBNAIL }
-					width={ width }
-					height={ height }
-					scale={ scale }
 				/>
 			</ParentComponent>
 		</div>

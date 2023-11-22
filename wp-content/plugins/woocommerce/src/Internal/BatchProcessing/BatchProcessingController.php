@@ -368,12 +368,13 @@ class BatchProcessingController {
 		$batch_detail_string = '';
 		// Log only first and last, as the entire batch may be too big.
 		if ( count( $batch ) > 0 ) {
-			$batch_detail_string = "\n" . wp_json_encode(
+			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_print_r -- Logging is for debugging.
+			$batch_detail_string = '\n' . print_r(
 				array(
 					'batch_start' => $batch[0],
 					'batch_end'   => end( $batch ),
 				),
-				JSON_PRETTY_PRINT
+				true
 			);
 		}
 		$error_message = "Error processing batch for {$batch_processor->get_name()}: {$error->getMessage()}" . $batch_detail_string;

@@ -52,7 +52,6 @@ export interface ProductCollectionQuery {
 	woocommerceStockStatus?: string[];
 	woocommerceAttributes?: AttributeMetadata[];
 	isProductCollectionBlock?: boolean;
-	woocommerceHandPickedProducts?: string[];
 }
 
 export type TProductCollectionOrder = 'asc' | 'desc';

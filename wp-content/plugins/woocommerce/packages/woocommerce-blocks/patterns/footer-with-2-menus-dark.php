@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Footer with 2 Menus Dark
+ * Title: WooCommerce Footer with 2 menus | Dark
  * Slug: woocommerce-blocks/footer-with-2-menus-dark
  * Categories: WooCommerce
  * Block Types: core/template-part/footer

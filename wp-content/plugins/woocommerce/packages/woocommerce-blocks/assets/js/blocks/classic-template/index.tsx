@@ -30,8 +30,6 @@ import { useEffect, useState } from '@wordpress/element';
 import { store as noticesStore } from '@wordpress/notices';
 import { useEntityRecord } from '@wordpress/core-data';
 import { debounce } from '@woocommerce/base-utils';
-import { woo } from '@woocommerce/icons';
-import { isNumber } from '@woocommerce/types';
 
 /**
  * Internal dependencies
@@ -50,8 +48,6 @@ import {
 } from './archive-product';
 import * as blockifiedSingleProduct from './single-product';
 import * as blockifiedProductSearchResults from './product-search-results';
-import * as blockifiedOrderConfirmation from './order-confirmation';
-
 import type { BlockifiedTemplateConfig } from './types';
 
 type Attributes = {
@@ -63,6 +59,7 @@ const blockifiedFallbackConfig = {
 	isConversionPossible: () => false,
 	getBlockifiedTemplate: () => [],
 	getDescription: () => '',
+	getButtonLabel: () => '',
 	onClickCallback: () => void 0,
 };
 
@@ -71,7 +68,6 @@ const conversionConfig: { [ key: string ]: BlockifiedTemplateConfig } = {
 	[ TYPES.productTaxonomy ]: blockifiedProductTaxonomyConfig,
 	[ TYPES.singleProduct ]: blockifiedSingleProduct,
 	[ TYPES.productSearchResults ]: blockifiedProductSearchResults,
-	[ TYPES.orderConfirmation ]: blockifiedOrderConfirmation,
 	fallback: blockifiedFallbackConfig,
 };
 
@@ -84,121 +80,17 @@ const pickBlockClientIds = ( blocks: Array< BlockInstance > ) =>
 		return [ ...acc, block.clientId ];
 	}, [] );
 
-const ConvertTemplate = ( { blockifyConfig, clientId, attributes } ) => {
-	const { getButtonLabel, onClickCallback, getBlockifiedTemplate } =
-		blockifyConfig;
-
-	const [ isPopoverOpen, setIsPopoverOpen ] = useState( false );
-	const { replaceBlock, selectBlock, replaceBlocks } =
-		useDispatch( blockEditorStore );
-
-	const { getBlocks } = useSelect( ( sel ) => {
-		return {
-			getBlocks: sel( blockEditorStore ).getBlocks,
-		};
-	}, [] );
-
-	const { createInfoNotice } = useDispatch( noticesStore );
-
-	return (
-		<div className="wp-block-woocommerce-classic-template__placeholder-migration-button-container">
-			<Button
-				isPrimary
-				onClick={ () => {
-					onClickCallback( {
-						clientId,
-						getBlocks,
-						attributes,
-						replaceBlock,
-						selectBlock,
-					} );
-					createInfoNotice(
-						__(
-							'Template transformed into blocks!',
-							'woo-gutenberg-products-block'
-						),
-						{
-							actions: [
-								{
-									label: __(
-										'Undo',
-										'woo-gutenberg-products-block'
-									),
-									onClick: () => {
-										const clientIds = pickBlockClientIds(
-											getBlocks()
-										);
-
-										replaceBlocks(
-											clientIds,
-											createBlock(
-												'core/group',
-												{
-													layout: {
-														inherit: true,
-														type: 'constrained',
-													},
-												},
-												[
-													createBlock(
-														'woocommerce/legacy-template',
-														{
-															template:
-																attributes.template,
-														}
-													),
-												]
-											)
-										);
-									},
-								},
-							],
-							type: 'snackbar',
-						}
-					);
-				} }
-				onMouseEnter={ () => setIsPopoverOpen( true ) }
-				onMouseLeave={ () => setIsPopoverOpen( false ) }
-				text={ getButtonLabel ? getButtonLabel() : '' }
-			>
-				{ isPopoverOpen && (
-					<Popover resize={ false } placement="right-end">
-						<div
-							style={ {
-								minWidth: '250px',
-								width: '250px',
-								maxWidth: '250px',
-								minHeight: '300px',
-								height: '300px',
-								maxHeight: '300px',
-								cursor: 'pointer',
-							} }
-						>
-							<BlockPreview
-								blocks={ getBlockifiedTemplate( attributes ) }
-								viewportWidth={ 1200 }
-								additionalStyles={ [
-									{
-										css: 'body { padding: 20px !important; height: fit-content !important; overflow:hidden}',
-									},
-								] }
-							/>
-						</div>
-					</Popover>
-				) }
-			</Button>
-		</div>
-	);
-};
-
 const Edit = ( {
 	clientId,
 	attributes,
 	setAttributes,
 }: BlockEditProps< Attributes > ) => {
-	const blockProps = useBlockProps();
-	const { editedPostId } = useSelect( ( sel ) => {
+	const { replaceBlock, selectBlock, replaceBlocks } =
+		useDispatch( blockEditorStore );
+
+	const { getBlocks, editedPostId } = useSelect( ( sel ) => {
 		return {
+			getBlocks: sel( blockEditorStore ).getBlocks,
 			editedPostId: sel( 'core/edit-site' ).getEditedPostId(),
 		};
 	}, [] );
@@ -211,6 +103,9 @@ const Edit = ( {
 		};
 	} >( 'postType', 'wp_template', editedPostId );
 
+	const { createInfoNotice } = useDispatch( noticesStore );
+
+	const blockProps = useBlockProps();
 	const templateDetails = getTemplateDetailsBySlug(
 		attributes.template,
 		TEMPLATES
@@ -232,63 +127,136 @@ const Edit = ( {
 	const {
 		isConversionPossible,
 		getDescription,
-		getSkeleton,
-		blockifyConfig,
+		getButtonLabel,
+		onClickCallback,
+		getBlockifiedTemplate,
 	} = conversionConfig[ templateType ];
-
-	const skeleton = getSkeleton ? (
-		getSkeleton()
-	) : (
-		<img
-			className="wp-block-woocommerce-classic-template__placeholder-image"
-			src={ `${ WC_BLOCKS_IMAGE_URL }template-placeholders/${ templatePlaceholder }.svg` }
-			alt={ templateTitle }
-		/>
-	);
 
 	const canConvert = isConversionPossible();
 	const placeholderDescription = getDescription( templateTitle, canConvert );
+	const [ isPopoverOpen, setIsPopoverOpen ] = useState( false );
 
 	return (
 		<div { ...blockProps }>
 			<Placeholder className="wp-block-woocommerce-classic-template__placeholder">
 				<div className="wp-block-woocommerce-classic-template__placeholder-wireframe">
-					{ skeleton }
-				</div>
-				<div className="wp-block-woocommerce-classic-template__placeholder-copy">
-					<div className="wp-block-woocommerce-classic-template__placeholder-copy__icon-container">
-						<span className="woo-icon">
-							<Icon icon={ woo } />{ ' ' }
-							{ __(
-								'WooCommerce',
-								'woo-gutenberg-products-block'
-							) }
-						</span>
-						<span>
-							{ __(
-								'Classic Template Placeholder',
-								'woo-gutenberg-products-block'
-							) }
-						</span>
-					</div>
-					<p
-						dangerouslySetInnerHTML={ {
-							__html: placeholderDescription,
-						} }
-					/>
-					<p>
-						{ __(
-							'You cannot edit the content of this block. However, you can move it and place other blocks around it.',
-							'woo-gutenberg-products-block'
+					<div className="wp-block-woocommerce-classic-template__placeholder-copy">
+						<div className="wp-block-woocommerce-classic-template__placeholder-copy__icon-container">
+							<Icon icon={ box } />
+							<span>
+								{ __(
+									'Classic Product Template',
+									'woo-gutenberg-products-block'
+								) }
+							</span>
+						</div>
+						<p>{ placeholderDescription }</p>
+						{ canConvert && (
+							<div className="wp-block-woocommerce-classic-template__placeholder-migration-button-container">
+								<Button
+									isPrimary
+									onClick={ () => {
+										onClickCallback( {
+											clientId,
+											getBlocks,
+											attributes,
+											replaceBlock,
+											selectBlock,
+										} );
+										createInfoNotice(
+											__(
+												'Template transformed into blocks!',
+												'woo-gutenberg-products-block'
+											),
+											{
+												actions: [
+													{
+														label: __(
+															'Undo',
+															'woo-gutenberg-products-block'
+														),
+														onClick: () => {
+															const clientIds =
+																pickBlockClientIds(
+																	getBlocks()
+																);
+
+															replaceBlocks(
+																clientIds,
+																createBlock(
+																	'core/group',
+																	{
+																		layout: {
+																			inherit:
+																				true,
+																			type: 'constrained',
+																		},
+																	},
+																	[
+																		createBlock(
+																			'woocommerce/legacy-template',
+																			{
+																				template:
+																					attributes.template,
+																			}
+																		),
+																	]
+																)
+															);
+														},
+													},
+												],
+												type: 'snackbar',
+											}
+										);
+									} }
+									onMouseEnter={ () =>
+										setIsPopoverOpen( true )
+									}
+									onMouseLeave={ () =>
+										setIsPopoverOpen( false )
+									}
+									text={ getButtonLabel() }
+								>
+									{ isPopoverOpen && (
+										<Popover
+											resize={ false }
+											placement="right-end"
+										>
+											<div
+												style={ {
+													minWidth: '250px',
+													width: '250px',
+													maxWidth: '250px',
+													minHeight: '300px',
+													height: '300px',
+													maxHeight: '300px',
+													cursor: 'pointer',
+												} }
+											>
+												<BlockPreview
+													blocks={ getBlockifiedTemplate(
+														attributes
+													) }
+													viewportWidth={ 1200 }
+													additionalStyles={ [
+														{
+															css: 'body { padding: 20px !important; height: fit-content !important; overflow:hidden}',
+														},
+													] }
+												/>
+											</div>
+										</Popover>
+									) }
+								</Button>
+							</div>
 						) }
-					</p>
-					{ canConvert && blockifyConfig && (
-						<ConvertTemplate
-							clientId={ clientId }
-							blockifyConfig={ blockifyConfig }
-							attributes={ attributes }
-						/>
-					) }
+					</div>
+					<img
+						className="wp-block-woocommerce-classic-template__placeholder-image"
+						src={ `${ WC_BLOCKS_IMAGE_URL }template-placeholders/${ templatePlaceholder }.svg` }
+						alt={ templateTitle }
+					/>
 				</div>
 			</Placeholder>
 		</div>
@@ -418,14 +386,7 @@ let currentTemplateId: string | undefined;
 subscribe( () => {
 	const previousTemplateId = currentTemplateId;
 	const store = select( 'core/edit-site' );
-	// With GB 16.3.0 the return type can be a number: https://github.com/WordPress/gutenberg/issues/53230
-	const editedPostId = store?.getEditedPostId() as
-		| string
-		| number
-		| undefined;
-
-	currentTemplateId = isNumber( editedPostId ) ? undefined : editedPostId;
-
+	currentTemplateId = store?.getEditedPostId() as string | undefined;
 	const parsedTemplate = currentTemplateId?.split( '//' )[ 1 ];
 
 	if ( parsedTemplate === null || parsedTemplate === undefined ) {

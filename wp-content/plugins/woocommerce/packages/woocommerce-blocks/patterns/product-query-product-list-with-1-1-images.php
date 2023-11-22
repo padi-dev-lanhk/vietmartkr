@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Product List with 1:1 Images
+ * Title: WooCommerce Product list with 1:1 images
  * Slug: woocommerce-blocks/product-query-product-list-with-1-1-images
  * Categories: WooCommerce
  * Block Types: core/query/woocommerce/product-query

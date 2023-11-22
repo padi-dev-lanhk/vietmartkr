@@ -8,12 +8,12 @@ import {
 } from '@wordpress/block-editor';
 import { useEffect } from '@wordpress/element';
 import type { BlockAlignment } from '@wordpress/blocks';
+import { useSelect } from '@wordpress/data';
 
 /**
  * Internal dependencies
  */
 import Block from './block';
-import { useIsDescendentOfSingleProductTemplate } from '../shared/use-is-descendent-of-single-product-template';
 
 type UnsupportedAligments = 'wide' | 'full';
 type AllowedAlignments = Exclude< BlockAlignment, UnsupportedAligments >;
@@ -53,12 +53,18 @@ const PriceEdit = ( {
 	};
 	const isDescendentOfQueryLoop = Number.isFinite( context.queryId );
 
-	let { isDescendentOfSingleProductTemplate } =
-		useIsDescendentOfSingleProductTemplate( { isDescendentOfQueryLoop } );
+	const isDescendentOfSingleProductTemplate = useSelect(
+		( select ) => {
+			const store = select( 'core/edit-site' );
+			const postId = store?.getEditedPostId< string | undefined >();
 
-	if ( isDescendentOfQueryLoop ) {
-		isDescendentOfSingleProductTemplate = false;
-	}
+			return (
+				postId?.includes( '//single-product' ) &&
+				! isDescendentOfQueryLoop
+			);
+		},
+		[ isDescendentOfQueryLoop ]
+	);
 
 	useEffect(
 		() =>

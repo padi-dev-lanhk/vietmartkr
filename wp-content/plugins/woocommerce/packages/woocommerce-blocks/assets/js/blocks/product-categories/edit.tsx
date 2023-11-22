@@ -8,9 +8,8 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import Block from './block';
 import './editor.scss';
-import type { ProductCategoriesBlockProps } from './types';
 
-export const Edit = ( props: ProductCategoriesBlockProps ): JSX.Element => {
+export const Edit = ( props: unknown ): JSX.Element => {
 	const blockProps = useBlockProps();
 
 	return (

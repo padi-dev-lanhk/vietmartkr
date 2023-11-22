@@ -5,6 +5,7 @@ import { getCategories, setCategories } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
 import { woo } from '@woocommerce/icons';
 import { Icon } from '@wordpress/icons';
+import '@woocommerce/templates/revert-button';
 
 /**
  * Internal dependencies
@@ -13,7 +14,6 @@ import '../css/editor.scss';
 import '../css/style.scss';
 import './filters/block-list-block';
 import './filters/get-block-attributes';
-import './base/components/notice-banner/style.scss';
 
 setCategories( [
 	...getCategories().filter(

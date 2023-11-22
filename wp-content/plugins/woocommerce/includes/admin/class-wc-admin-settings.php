@@ -429,9 +429,8 @@ if ( ! class_exists( 'WC_Admin_Settings', false ) ) :
 
 					// Radio inputs.
 					case 'radio':
-						$option_value     = $value['value'];
-						$disabled_values  = $value['disabled'] ?? array();
-						$show_desc_at_end = $value['desc_at_end'] ?? false;
+						$option_value = $value['value'];
+						$disabled_values = $value['disabled'] ?? array();
 
 						?>
 						<tr valign="top">
@@ -440,11 +439,7 @@ if ( ! class_exists( 'WC_Admin_Settings', false ) ) :
 							</th>
 							<td class="forminp forminp-<?php echo esc_attr( sanitize_title( $value['type'] ) ); ?>">
 								<fieldset>
-									<?php
-									if ( ! $show_desc_at_end ) {
-										echo wp_kses_post( $description );
-									}
-									?>
+									<?php echo $description; // WPCS: XSS ok. ?>
 									<ul>
 									<?php
 									foreach ( $value['options'] as $key => $val ) {
@@ -462,9 +457,6 @@ if ( ! class_exists( 'WC_Admin_Settings', false ) ) :
 												/> <?php echo esc_html( $val ); ?></label>
 										</li>
 										<?php
-									}
-									if ( $show_desc_at_end ) {
-										echo wp_kses_post( "<p class='description description-thin'>{$description}</p>" );
 									}
 									?>
 									</ul>

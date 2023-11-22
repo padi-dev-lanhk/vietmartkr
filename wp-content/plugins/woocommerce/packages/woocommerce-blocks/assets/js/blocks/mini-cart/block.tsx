@@ -15,6 +15,7 @@ import {
 } from '@woocommerce/price-format';
 import { getSettingWithCoercion } from '@woocommerce/settings';
 import {
+	CartResponseTotals,
 	isBoolean,
 	isString,
 	isCartResponseTotals,
@@ -33,7 +34,6 @@ import classnames from 'classnames';
 /**
  * Internal dependencies
  */
-import type { BlockAttributes } from './types';
 import QuantityBadge from './quantity-badge';
 import { MiniCartContentsBlock } from './mini-cart-contents/block';
 import './style.scss';
@@ -42,7 +42,14 @@ import {
 	attributes as miniCartContentsAttributes,
 } from './mini-cart-contents/attributes';
 
-type Props = BlockAttributes;
+interface Props {
+	isInitiallyOpen?: boolean;
+	colorClassNames?: string;
+	style?: Record< string, Record< string, string > >;
+	contents: string;
+	addToCartBehaviour: string;
+	hasHiddenPrice: boolean;
+}
 
 function getScrollbarWidth() {
 	return window.innerWidth - document.documentElement.clientWidth;
@@ -50,17 +57,12 @@ function getScrollbarWidth() {
 
 const MiniCartBlock = ( attributes: Props ): JSX.Element => {
 	const {
-		initialCartItemsCount,
-		initialCartTotals,
 		isInitiallyOpen = false,
 		colorClassNames,
+		style,
 		contents = '',
-		miniCartIcon,
 		addToCartBehaviour = 'none',
 		hasHiddenPrice = false,
-		priceColorValue,
-		iconColorValue,
-		productCountColorValue,
 	} = attributes;
 
 	const {
@@ -69,31 +71,13 @@ const MiniCartBlock = ( attributes: Props ): JSX.Element => {
 		cartTotals: cartTotalsFromApi,
 	} = useStoreCart();
 
-	const cartIsLoadingForTheFirstTime = useRef( cartIsLoading );
+	const isFirstLoadingCompleted = useRef( cartIsLoading );
 
 	useEffect( () => {
-		if ( cartIsLoadingForTheFirstTime.current && ! cartIsLoading ) {
-			cartIsLoadingForTheFirstTime.current = false;
+		if ( isFirstLoadingCompleted.current && ! cartIsLoading ) {
+			isFirstLoadingCompleted.current = false;
 		}
-	}, [ cartIsLoading, cartIsLoadingForTheFirstTime ] );
-
-	useEffect( () => {
-		if (
-			! cartIsLoading &&
-			isCartResponseTotals( cartTotalsFromApi ) &&
-			isNumber( cartItemsCountFromApi )
-		) {
-			// Save server data to local storage, so we can re-fetch it faster
-			// on the next page load.
-			localStorage.setItem(
-				'wc-blocks_mini_cart_totals',
-				JSON.stringify( {
-					totals: cartTotalsFromApi,
-					itemsCount: cartItemsCountFromApi,
-				} )
-			);
-		}
-	} );
+	}, [ cartIsLoading, isFirstLoadingCompleted ] );
 
 	const [ isOpen, setIsOpen ] = useState< boolean >( isInitiallyOpen );
 	// We already rendered the HTML drawer placeholder, so we want to skip the
@@ -199,19 +183,29 @@ const MiniCartBlock = ( attributes: Props ): JSX.Element => {
 		isBoolean
 	);
 
+	const preFetchedCartTotals =
+		getSettingWithCoercion< CartResponseTotals | null >(
+			'cartTotals',
+			null,
+			isCartResponseTotals
+		);
+
+	const preFetchedCartItemsCount = getSettingWithCoercion< number >(
+		'cartItemsCount',
+		0,
+		isNumber
+	);
+
 	const taxLabel = getSettingWithCoercion( 'taxLabel', '', isString );
 
 	const cartTotals =
-		cartIsLoadingForTheFirstTime.current &&
-		isCartResponseTotals( initialCartTotals )
-			? initialCartTotals
-			: cartTotalsFromApi;
+		! isFirstLoadingCompleted.current || preFetchedCartTotals === null
+			? cartTotalsFromApi
+			: preFetchedCartTotals;
 
-	const cartItemsCount =
-		cartIsLoadingForTheFirstTime.current &&
-		isNumber( initialCartItemsCount )
-			? initialCartItemsCount
-			: cartItemsCountFromApi;
+	const cartItemsCount = ! isFirstLoadingCompleted.current
+		? cartItemsCountFromApi
+		: preFetchedCartItemsCount;
 
 	const subTotal = showIncludingTax
 		? parseInt( cartTotals.total_items, 10 ) +
@@ -244,10 +238,16 @@ const MiniCartBlock = ( attributes: Props ): JSX.Element => {
 				)
 		  );
 
+	const colorStyle = {
+		backgroundColor: style?.color?.background,
+		color: style?.color?.text,
+	};
+
 	return (
 		<>
 			<button
 				className={ `wc-block-mini-cart__button ${ colorClassNames }` }
+				style={ colorStyle }
 				onClick={ () => {
 					if ( ! isOpen ) {
 						setIsOpen( true );
@@ -257,10 +257,7 @@ const MiniCartBlock = ( attributes: Props ): JSX.Element => {
 				aria-label={ ariaLabel }
 			>
 				{ ! hasHiddenPrice && (
-					<span
-						className="wc-block-mini-cart__amount"
-						style={ { color: priceColorValue } }
-					>
+					<span className="wc-block-mini-cart__amount">
 						{ formatPrice(
 							subTotal,
 							getCurrencyFromPriceResponse( cartTotals )
@@ -268,19 +265,11 @@ const MiniCartBlock = ( attributes: Props ): JSX.Element => {
 					</span>
 				) }
 				{ taxLabel !== '' && subTotal !== 0 && ! hasHiddenPrice && (
-					<small
-						className="wc-block-mini-cart__tax-label"
-						style={ { color: priceColorValue } }
-					>
+					<small className="wc-block-mini-cart__tax-label">
 						{ taxLabel }
 					</small>
 				) }
-				<QuantityBadge
-					count={ cartItemsCount }
-					icon={ miniCartIcon }
-					iconColor={ iconColorValue }
-					productCountColor={ productCountColorValue }
-				/>
+				<QuantityBadge count={ cartItemsCount } />
 			</button>
 			<Drawer
 				className={ classnames(

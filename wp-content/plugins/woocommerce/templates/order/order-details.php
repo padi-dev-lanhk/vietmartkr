@@ -96,8 +96,7 @@ if ( $show_downloads ) {
 			<?php endif; ?>
 		</tfoot>
 	</table>
-	<h3>Trạng thái vận chuyển</h3>
-	<?php get_field('statuscode'); ?>
+
 	<?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
 </section>
 

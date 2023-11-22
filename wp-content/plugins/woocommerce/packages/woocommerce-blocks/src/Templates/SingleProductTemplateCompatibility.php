@@ -259,16 +259,19 @@ class SingleProductTemplateCompatibility extends AbstractTemplateCompatibility {
 	 * @return string
 	 */
 	public static function add_compatibility_layer( $template_content ) {
-		$parsed_blocks = parse_blocks( $template_content );
-
-		if ( ! self::has_single_product_template_blocks( $parsed_blocks ) ) {
-			$template = self::inject_custom_attributes_to_first_and_last_block_single_product_template( $parsed_blocks );
-			return self::serialize_blocks( $template );
-		}
-
 		$wrapped_blocks = self::wrap_single_product_template( $template_content );
 		$template       = self::inject_custom_attributes_to_first_and_last_block_single_product_template( $wrapped_blocks );
-		return self::serialize_blocks( $template );
+
+		return array_reduce(
+			$template,
+			function( $carry, $item ) {
+				if ( is_array( $item ) ) {
+					return $carry . serialize_blocks( $item );
+				}
+				return $carry . serialize_block( $item );
+			},
+			''
+		);
 
 	}
 
@@ -283,13 +286,15 @@ class SingleProductTemplateCompatibility extends AbstractTemplateCompatibility {
 		$parsed_blocks  = parse_blocks( $template_content );
 		$grouped_blocks = self::group_blocks( $parsed_blocks );
 
+		$single_product_template_blocks = array( 'woocommerce/product-image-gallery', 'woocommerce/product-details', 'woocommerce/add-to-cart-form', 'woocommerce/product-meta', 'woocommerce/product-price', 'woocommerce/breadcrumbs' );
+
 		$wrapped_blocks = array_map(
-			function( $blocks ) {
+			function( $blocks ) use ( $single_product_template_blocks ) {
 				if ( 'core/template-part' === $blocks[0]['blockName'] ) {
 					return $blocks;
 				}
 
-				$has_single_product_template_blocks = self::has_single_product_template_blocks( $blocks );
+				$has_single_product_template_blocks = self::has_single_product_template_blocks( $blocks, $single_product_template_blocks );
 
 				if ( $has_single_product_template_blocks ) {
 					$wrapped_block = self::create_wrap_block_group( $blocks );
@@ -315,8 +320,7 @@ class SingleProductTemplateCompatibility extends AbstractTemplateCompatibility {
 
 				$index          = $carry['index'];
 				$carry['index'] = $carry['index'] + 1;
-				// If the block is a child of a group block, we need to get the first block of the group.
-				$block = isset( $item[0] ) ? $item[0] : $item;
+				$block          = $item[0];
 
 				if ( 'core/template-part' === $block['blockName'] || self::is_custom_html( $block ) ) {
 					$carry['template'][] = $block;
@@ -392,11 +396,10 @@ class SingleProductTemplateCompatibility extends AbstractTemplateCompatibility {
 	 * woocommerce/product-gallery-image, woocommerce/product-details, woocommerce/add-to-cart-form]
 	 *
 	 * @param array $parsed_blocks Array of parsed block objects.
+	 * @param array $single_product_template_blocks Array of single product template blocks.
 	 * @return bool True if the template has a single product template block, false otherwise.
 	 */
-	private static function has_single_product_template_blocks( $parsed_blocks ) {
-		$single_product_template_blocks = array( 'woocommerce/product-image-gallery', 'woocommerce/product-details', 'woocommerce/add-to-cart-form', 'woocommerce/product-meta', 'woocommerce/product-price', 'woocommerce/breadcrumbs' );
-
+	private static function has_single_product_template_blocks( $parsed_blocks, $single_product_template_blocks ) {
 		$found = false;
 
 		foreach ( $parsed_blocks as $block ) {
@@ -474,24 +477,5 @@ class SingleProductTemplateCompatibility extends AbstractTemplateCompatibility {
 	 */
 	private static function is_custom_html( $block ) {
 		return empty( $block['blockName'] ) && ! empty( $block['innerHTML'] );
-	}
-
-	/**
-	 * Serialize template.
-	 *
-	 * @param array $parsed_blocks Parsed blocks.
-	 * @return string
-	 */
-	private static function serialize_blocks( $parsed_blocks ) {
-		return array_reduce(
-			$parsed_blocks,
-			function( $carry, $item ) {
-				if ( is_array( $item ) ) {
-					return $carry . serialize_blocks( $item );
-				}
-				return $carry . serialize_block( $item );
-			},
-			''
-		);
 	}
 }

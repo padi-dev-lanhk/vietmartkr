@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: 3-Column Product Row
+ * Title: WooCommerce 3-Column Product Row
  * Slug: woocommerce-blocks/product-query-3-column-product-row
  * Categories: WooCommerce
  * Block Types: core/query/woocommerce/product-query
