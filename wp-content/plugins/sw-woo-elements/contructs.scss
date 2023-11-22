@@ -1,0 +1,80 @@
+
+.swe-wrapper {
+	.swe-wrap-item {}
+	.swe-wrap-image {
+		img {}
+	}
+	.swe-wrap-icon 
+	.swe-wrap-content {
+		.swe-title {}
+		.swe-icon {}
+		.swe-meta {}
+		.swe-description {}
+		.swe-button {
+			.swe-button-info
+			.swe-button-success
+			.swe-button-warning
+			.swe-button-danger
+		}
+	}
+}
+.swe-wrap-banner
+.swe-wrap-icon
+.swe-wrap-button
+
+.swe-abs {
+	position: absolute;
+}
+
+.swe-product-tab-head {
+	
+}
+
+.swe-flex {
+	display: flex;
+}
+
+.swe-full {
+	width: 100%;
+}
+
+.swe-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.swe-button {
+	position: relative;
+	z-index: 1;
+}
+
+.link-full-section {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0;
+	left: 0;
+}
+.swe-position-left, 
+.swe-position-right, 
+.swe-position-bottom, 
+.swe-position-top, 
+.swe-position-middle {}
+
+.swe-view-default {}
+.swe-view-stacked {}
+.swe-view-framed {}
+
+.swe-shape-circle
+.swe-shape-square
+
+.swe-align-left
+.swe-align-center
+.swe-align-right
+.swe-align-justify
+
+.swe-v-align-top
+.swe-v-align-middle
+.swe-v-align-bottom
