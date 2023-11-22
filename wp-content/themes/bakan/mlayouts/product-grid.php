@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $product;
 ?>
 <li <?php post_class( 'item' ); ?>>
-	<div class="products-entry item-wrap clearfix 1234">
+	<div class="products-entry item-wrap clearfix">
 		<div class="item-detail">
 			<div class="item-img products-thumb">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">

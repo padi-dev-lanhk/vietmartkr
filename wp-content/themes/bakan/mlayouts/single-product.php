@@ -50,7 +50,7 @@
 									do_action( 'woocommerce_before_single_product_summary' );
 								?>
 							</div>							
-							<div class="content_product_detail 123456">
+							<div class="content_product_detail">
 								<!-- woocommerce_template_single_title - 5 -->
 								<!-- woocommerce_template_single_rating - 10 -->
 								<!-- woocommerce_template_single_price - 20 -->

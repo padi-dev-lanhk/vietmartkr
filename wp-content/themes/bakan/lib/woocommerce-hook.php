@@ -88,7 +88,7 @@ if( !function_exists( 'swg_label_stock' ) ){
 		global $product;
 		if( bakan_mobile_check() ) :
 	?>
-			<div class="product-info 123">
+			<div class="product-info">
 				<?php $stock = ( $product->is_in_stock() )? 'Còn hàng' : 'out-stock' ; ?>
 				<div class="product-stock <?php echo esc_attr( $stock ); ?>">
 					<span><?php echo sprintf( ( $product->is_in_stock() )? '%s' : esc_html__( 'Hết hàng', 'bakan' ), esc_html__( 'Còn hàng', 'bakan' ) ); ?></span>
@@ -699,7 +699,7 @@ function bakan_product_stock(){
 	
 	if( !bakan_mobile_check() ) : ?>
 		<?php  $stock = ( $product->is_in_stock() ) ? 'in-stock' : 'out-stock' ;?>
-		<div class="1234 product-info <?php echo esc_attr( $stock ); ?>">
+		<div class="product-info <?php echo esc_attr( $stock ); ?>">
 			<?php if( $product->is_in_stock() ) : ?>
 				<span class="label-stock"><?php echo esc_html__( 'Tình trạng: ', 'bakan' ); ?></span><span><?php echo esc_html__( 'Còn hàng', 'bakan' ); ?></span>
 			<?php else: ?>

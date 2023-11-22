@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 								</div>				
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 clear_xs">
-								<div class="content_product_detail 12">
+								<div class="content_product_detail">
 									<!-- woocommerce_template_single_title - 5 -->
 									<!-- woocommerce_template_single_rating - 10 -->
 									<!-- woocommerce_template_single_price - 20 -->

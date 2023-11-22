@@ -4,6 +4,7 @@
 		bakan_footer_check();
 	endif; ?>
 </div>
+<div class="menu-mobile"></div>
 </div>
 <?php wp_footer(); ?>
 

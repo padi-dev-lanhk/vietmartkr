@@ -38,8 +38,6 @@ if( class_exists( 'WooCommerce' ) ){
 	endif;
 }
 
-
-
 add_action( 'elementor/theme/register_locations', 'custom_location_action' );
 function custom_location_action( $location_manager ){
 	$core_locations = $location_manager->get_core_locations();
@@ -96,15 +94,3 @@ function bakan_businessplus_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'bakan_businessplus_mime_types');
 add_filter('mime_types', 'bakan_businessplus_mime_types');
-
-add_action("woocommerce_order_item_meta_end", "email_order_custom_field", 999, 4);
-
-function email_order_custom_field($item_id, $item, $order, $plain_text)
-{
-    $address = get_field('statuscode', $item->get_product_id());
-
-    echo ($address) ?
-        '<div>Address: ' . $address . '</div>'
-        :
-        '<div>Address: No address found!</div>';
-};
