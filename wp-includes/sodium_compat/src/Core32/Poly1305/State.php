@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 if (class_exists('ParagonIE_Sodium_Core32_Poly1305_State', false)) {
     return;

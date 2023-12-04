@@ -1,4 +1,4 @@
-<?php
+<?php 
 /**
  * Register the block patterns and block patterns categories
  *
