@@ -14,7 +14,7 @@ $cart_total = WC()->cart->get_cart_total();
 
 global $woocommerce;
 ?>
-
+<a style="position: absolute;width: 140%;height: 140%;top: -20%;z-index: 999;opacity: 0;" href="https://vietmartkr.com/cart"></a>
 <div class="<?php echo esc_attr($sweWrap, 'sw-woo-elements'); ?>">
 	<input type="checkbox" id="woo-cart-<?php echo esc_attr($settings['id_int'], 'sw-woo-elements'); ?>" class="input-toggle">
 	<div class="woo-cart-open">
@@ -48,8 +48,8 @@ global $woocommerce;
 	<label for="woo-cart-<?php echo esc_attr($settings['id_int'], 'sw-woo-elements'); ?>" class="woo-cart-mask woo-cart-close"></label>
 	<div class="swe-wrap-cart-content">
 		<div class="swe-wrap-cart-top">
-			<?php printf('<h4 class="cart-title">%s</h4>', __('Shopping Cart', 'sw-woo-elements'), $cart_count); ?>
-			<div class="swe-close"><?php echo __('Close', 'sw-woo-elements'); ?><i class="fas fa-times"></i></div>
+			<?php printf('<h4 class="cart-title">%s</h4>', __('Giỏ hàng', 'sw-woo-elements'), $cart_count); ?>
+			<div class="swe-close"><?php echo __('Đóng', 'sw-woo-elements'); ?><i class="fas fa-times"></i></div>
 		</div>
 		<div class="swe-wrap-cart-bottom">
 			<?php woocommerce_mini_cart(); ?>

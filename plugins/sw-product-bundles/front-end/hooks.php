@@ -107,7 +107,7 @@ add_filter( 'woocommerce_loop_add_to_cart_link', 'swpb_custom_view_product_butto
 function swpb_custom_view_product_button( $button, $product ) {
 	if( !$product->is_type( 'bundle' ) ) return $button;
 	if ( $product ) { ?>
-		<a href="?add-to-cart=<?php echo esc_attr( $product->get_id() ); ?>" data-quantity="1" class="button product_type_bundle add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>" data-product_sku="<?php echo esc_attr( $product->get_sku() ); ?>" aria-label="Add “<?php echo esc_html( $product->get_title() ); ?>” to your cart" rel="nofollow"><?php echo esc_html__('Add To Cart', 'woocommerce'); ?></a>
+		<a href="?add-to-cart=<?php echo esc_attr( $product->get_id() ); ?>" data-quantity="1" class="button product_type_bundle add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>" data-product_sku="<?php echo esc_attr( $product->get_sku() ); ?>" aria-label="Add “<?php echo esc_html( $product->get_title() ); ?>” to your cart" rel="nofollow"><?php echo esc_html__('Thêm vào giỏ hàng', 'woocommerce'); ?></a>
 		<?php
 	}
 }

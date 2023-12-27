@@ -10,7 +10,7 @@ if ($product_id) {
 		<div class="wrap">
 			<div class="wrap-top">
 				<p>
-					<?php echo get_option('swatcn_title', esc_html__('Successfully added to your cart.', 'sw-add-to-cart-notification') ); ?>
+					<?php echo get_option('swatcn_title', esc_html__('Thêm vào giỏ hàng thành công.', 'sw-add-to-cart-notification') ); ?>
 				</p>
 			</div>
 			<div class="wrap-middle">

@@ -10,7 +10,7 @@ if ($product_id) {
 		<div class="wrap">
 			<div class="wrap-top">
 				<p>
-					<?php echo get_option('swatcn_title', esc_html__('Successfully added to your cart.', 'sw-add-to-cart-notification') ); ?>
+					<?php echo get_option('swatcn_title', esc_html__('Thêm vào giỏ hàng thành công.', 'sw-add-to-cart-notification') ); ?>
 				</p>
 			</div>
 			<div class="wrap-middle">
@@ -34,28 +34,28 @@ if ($product_id) {
 						</span>
 					<?php } ?>
 					<?php if (get_option('swatcn_quantity', '') != 'yes') { ?>
-						<p><?php printf( esc_html__('QTY: %s', 'sw-add-to-cart-notification'), $qty ); ?></p>
+						<p><?php printf( esc_html__('Số lượng: %s', 'sw-add-to-cart-notification'), $qty ); ?></p>
 					<?php } ?>
 					</div>
 				</div>
 				<div class="wrap-right">
 					<?php if (get_option('swatcn_btn_checkout', '') != 'yes') { ?>
-					<a href="<?php echo wc_get_checkout_url(); ?>" class="button checkout"><?php echo esc_html__( 'Checkout', 'sw-add-to-cart-notification' ); ?></a>
+					<a href="<?php echo wc_get_checkout_url(); ?>" class="button checkout"><?php echo esc_html__( 'Thanh Toán', 'sw-add-to-cart-notification' ); ?></a>
 					<?php } ?>
-					<p class="text-subtotal"><?php echo esc_html__('Order subtotal', 'sw-add-to-cart-notification'); ?></p>
+					<p class="text-subtotal"><?php echo esc_html__('Tổng', 'sw-add-to-cart-notification'); ?></p>
 					<p class="subtotal"><?php echo WC()->cart->get_cart_subtotal(); ?></p>
 					<p class="text-subtotal">
 						<?php if ( WC()->cart->cart_contents_count >= 2 ){ ?>
-							<?php printf( esc_html__('Your cart contains %s items', 'sw-add-to-cart-notification'), WC()->cart->cart_contents_count ); ?>
+							<?php printf( esc_html__('Giỏ hàng có %s sản phẩm', 'sw-add-to-cart-notification'), WC()->cart->cart_contents_count ); ?>
 						<?php }else{ ?>
-							<?php printf( esc_html__('Your cart contains %s item', 'sw-add-to-cart-notification'), WC()->cart->cart_contents_count ); ?>
+							<?php printf( esc_html__('Giỏ hàng có %s sản phẩm', 'sw-add-to-cart-notification'), WC()->cart->cart_contents_count ); ?>
 						<?php } ?>
 					</p>
 					<?php if (get_option('swatcn_btn_continue_shopping', '') != 'yes') { ?>
-						<span class="button close"><?php echo esc_html__( 'Continue Shopping', 'sw-add-to-cart-notification' ); ?></span>
+						<span class="button close"><?php echo esc_html__( 'Tiếp tục mua hàng', 'sw-add-to-cart-notification' ); ?></span>
 					<?php } ?>
 					<?php if (get_option('swatcn_btn_view_cart', '') != 'yes') { ?>
-					<a href="<?php echo wc_get_cart_url(); ?>" class="button viewcart"><?php echo esc_html__( 'View Cart', 'sw-add-to-cart-notification' ); ?></a>
+					<a href="<?php echo wc_get_cart_url(); ?>" class="button viewcart"><?php echo esc_html__( 'Giỏ hàng', 'sw-add-to-cart-notification' ); ?></a>
 					<?php } ?>
 				</div>
 			</div>

@@ -61,7 +61,7 @@ class SettingAddToCart {
 				'id'   => 'swatcn_title',
 				'name' => esc_html__('Title', 'sw-add-to-cart-notification'),
 				'type' => 'text',
-				'default' => esc_html__('Successfully added to your cart.', 'sw-add-to-cart-notification'),
+				'default' => esc_html__('Thêm vào giỏ hàng thành công.', 'sw-add-to-cart-notification'),
 				'desc' => esc_html__('Title when you successfully added product', 'sw-add-to-cart-notification')
 			),
 
