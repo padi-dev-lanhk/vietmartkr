@@ -36,6 +36,7 @@
 		 e.preventDefault();
 	});
 	
+	
 	$(".search-cate .icon-search").on('click', function(){
 		$(".search-cate .top-form").fadeToggle();
 		$('body').toggleClass("on-search");

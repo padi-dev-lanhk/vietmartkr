@@ -89,9 +89,10 @@ if( !function_exists( 'swg_label_stock' ) ){
 		if( bakan_mobile_check() ) :
 	?>
 			<div class="product-info">
-				<?php $stock = ( $product->is_in_stock() )? 'in-stock' : 'out-stock' ; ?>
+				<?php $stock = ( $product->is_in_stock() )? 'Còn hàng' : 'out-stock' ; ?>
+
 				<div class="product-stock <?php echo esc_attr( $stock ); ?>">
-					<span><?php echo sprintf( ( $product->is_in_stock() )? '%s' : esc_html__( 'Out stock', 'bakan' ), esc_html__( 'in stock', 'bakan' ) ); ?></span>
+					<span><?php echo sprintf( ( $product->is_in_stock() )? '%s' : esc_html__( 'Hết hàng', 'bakan' ), esc_html__( 'Còn hàng', 'bakan' ) ); ?></span>
 				</div>
 			</div>
 
@@ -312,7 +313,7 @@ function bakan_banner_listing(){
 		return;
 	}
 	
-	$html = '<div class="widget_sp_image">';
+	$html = '<div class="widget_sp_image 123">';
 	if( '' === $banner_enable ){
 		$html .= ( $link_banner != '' ) ? '<a href="'.esc_url($link_banner).'">': '';
 		$html .= ( $banner_listing != '' ) ? '<img src="'. esc_url( $banner_listing ) .'" alt="'. esc_attr__( 'Banner Category', 'bakan' ) .'"/>' : '';
@@ -667,7 +668,7 @@ function bakan_woocommerce_sharing(){
 		<span class="sku_wrapper"><?php esc_html_e( 'Product SKU:', 'bakan' ); ?> <span class="sku" itemprop="sku"><?php echo sprintf( ( $sku = $product->get_sku() ) ? '%s' : esc_html__( 'N/A', 'bakan' ), $sku ); ?></span></span>
 
 		<?php endif; ?>
-		<?php echo wc_get_product_category_list( $product->get_id(), '', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'bakan' ) . ' ', '</span>' ); ?>
+		<?php echo wc_get_product_category_list( $product->get_id(), '', '<span class="posted_in">' . _n( 'Danh mục:', 'Danh mục:', count( $product->get_category_ids() ), 'bakan' ) . ' ', '</span>' ); ?>
 		<?php echo wc_get_product_tag_list( $product->get_id(), '', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'bakan' ) . ' ', '</span>' ); ?>
 	</div>
 <?php 
@@ -699,12 +700,17 @@ function bakan_product_stock(){
 	
 	if( !bakan_mobile_check() ) : ?>
 		<?php  $stock = ( $product->is_in_stock() ) ? 'in-stock' : 'out-stock' ;?>
+		<div class="count-rating" style="justify-content: flex-start;">
+			<span class="count-view">Đã bán: <?php the_field('view'); ?></span>
+			<span class="count-view" style="margin-left: 15px;margin-top: -2px;"><i data-star="4"></i></span>
+		</div>
 		<div class="product-info <?php echo esc_attr( $stock ); ?>">
+
 			<?php if( $product->is_in_stock() ) : ?>
-				<span class="label-stock"><?php echo esc_html__( 'Available: ', 'bakan' ); ?></span><span><?php echo esc_html__( 'In stock', 'bakan' ); ?></span>
+				<span class="label-stock"><?php echo esc_html__( 'Tình trạng: ', 'bakan' ); ?></span><span><?php echo esc_html__( 'Còn hàng', 'bakan' ); ?></span>
 			<?php else: ?>
 				<div class="subscribe-form-out-stock">
-					<h4><?php echo esc_html__('Email when stock available','bakan');?></h4>
+					<h4><?php echo esc_html__('Hết hàng','bakan');?></h4>
 					<?php echo do_shortcode( '[mc4wp_form]' ); ?>
 				</div>
 			<?php endif; ?>
@@ -857,7 +863,7 @@ function bakan_single_addcart_wrapper_start(){
 	global $product;
 	$class = ( swg_options( 'product_single_buynow' ) && !in_array( $product->get_type(), array( 'grouped', 'external' ) ) ) ? 'single-buynow' : '';
 	echo '<div class="addcart-wrapper '. esc_attr( $class ) .' clearfix">';
-	echo '<div class="qty">'.esc_html__( 'Quantity:','bakan' ).'</div>';
+	echo '<div class="qty">'.esc_html__( 'Số lượng:','bakan' ).'</div>';
 }
 
 function bakan_single_addcart_wrapper_end(){
@@ -878,21 +884,21 @@ function bakan_single_addcart(){
 		if( $product->get_type() == 'variable' ){
 			$args['variation_id'] = '';
 		}
-		$html .= '<a class="button-buynow" href="'. add_query_arg( $args, get_permalink( get_option( 'woocommerce_checkout_page_id' ) ) ) .'" data-url="'. add_query_arg( $args, get_permalink( get_option( 'woocommerce_checkout_page_id' ) ) ) .'">'. esc_html__( 'Buy Now', 'bakan' ) .'</a>';
+		$html .= '<a class="button-buynow" href="'. add_query_arg( $args, get_permalink( get_option( 'woocommerce_checkout_page_id' ) ) ) .'" data-url="'. add_query_arg( $args, get_permalink( get_option( 'woocommerce_checkout_page_id' ) ) ) .'">'. esc_html__( 'Mua ngay', 'bakan' ) .'</a>';
 		$html .= '<div class="clear"></div>';
 	}
 
 	/* compare & wishlist */
-	if( ( class_exists( 'YITH_WCWL' ) || class_exists( 'YITH_WOOCOMPARE' ) ) && !bakan_mobile_check() ){
-		$html .= '<div class="item-bottom">';
-		if( class_exists( 'YITH_WCWL' ) ) :
-			$html .= do_shortcode( "[yith_wcwl_add_to_wishlist]" );
-		endif;
-		if( class_exists( 'YITH_WOOCOMPARE' ) ) : 
-			$html .= '<a href="javascript:void(0)" class="compare button" data-product_id="'. $product_id .'" rel="nofollow">'. esc_html__( 'Compare', 'bakan' ) .'</a>';
-		endif;
-		$html .= '</div>';
-	}
+	// if( ( class_exists( 'YITH_WCWL' ) || class_exists( 'YITH_WOOCOMPARE' ) ) && !bakan_mobile_check() ){
+	// 	$html .= '<div class="item-bottom">';
+	// 	if( class_exists( 'YITH_WCWL' ) ) :
+	// 		$html .= do_shortcode( "[yith_wcwl_add_to_wishlist]" );
+	// 	endif;
+	// 	if( class_exists( 'YITH_WOOCOMPARE' ) ) : 
+	// 		$html .= '<a href="javascript:void(0)" class="compare button" data-product_id="'. $product_id .'" rel="nofollow">'. esc_html__( 'Compare', 'bakan' ) .'</a>';
+	// 	endif;
+	// 	$html .= '</div>';
+	// }
 	echo sprintf( '%s', $html );
 }
 

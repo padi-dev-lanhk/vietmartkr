@@ -61,10 +61,10 @@ function bakan_scripts() {
 	if ( !is_admin() ){
 		
 		$translation_text = array(
-			'cart_text' 		 => esc_html__( 'Add To Cart', 'bakan' ),
+			'cart_text' 		 => esc_html__( 'Thêm vào giỏ hàng', 'bakan' ),
 			'compare_text' 	 => esc_html__( 'Add To Compare', 'bakan' ),
-			'wishlist_text'  => esc_html__( 'Add To WishList', 'bakan' ),
-			'quickview_text' => esc_html__( 'QuickView', 'bakan' ),
+			'wishlist_text'  => esc_html__( 'Yêu thích', 'bakan' ),
+			'quickview_text' => esc_html__( 'Xem nhanh', 'bakan' ),
 			'ajax_url' => admin_url( 'admin-ajax.php', 'relative' ), 
 			'redirect' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ),
 			'message' => esc_html__( 'Please enter your usename and password', 'bakan' ),
