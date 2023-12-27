@@ -76,7 +76,7 @@
 			</div>
 			<?php } ?>
 			<div class="content-search">
-				<input class="autosearch-input" type="text" value="<?php echo esc_attr( ( isset( $_GET['s'] ) && $_GET['s'] ) ? ( $_GET['s'] ) : "" ); ?>" size="50" autocomplete="off" placeholder="<?php echo esc_attr__( 'Search for product...', 'sw_ajax_woocommerce_search' ); ?>" name="s">	
+				<input class="autosearch-input" type="text" value="<?php echo esc_attr( ( isset( $_GET['s'] ) && $_GET['s'] ) ? ( $_GET['s'] ) : "" ); ?>" size="50" autocomplete="off" placeholder="<?php echo esc_attr__( 'Tìm kiếm sản phẩm...', 'sw_ajax_woocommerce_search' ); ?>" name="s">	
 				<div class="search-append"></div>
 			</div>
 				<span class="input-group-btn">
