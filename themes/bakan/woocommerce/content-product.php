@@ -55,6 +55,13 @@ if ( ! $product || ! $product->is_visible() ) {
 				 * @hooked woocommerce_template_loop_add_to_cart - 10
 				 */
 				do_action( 'woocommerce_after_shop_loop_item' );
+
+				?>
+				<div class="count-rating">
+					<span class="count-view">Đã bán: <?php the_field('view'); ?></span>
+					<span class="count-view"><i data-star="<?php the_field('rating'); ?>"></i></span>
+				</div>
+				<?php
 			?>
 			</div>
 		</div>

@@ -158,7 +158,7 @@ class bakan_ResmenuSB{
 								
 							<?php if( has_nav_menu('vertical_menu') ) : ?>
 								<li class="<?php echo esc_attr( $class_v ); ?>">
-									<a href="#ResVertical" data-toggle="tab" class="tab-vertical"><?php echo esc_html__( 'Categories', 'bakan' ); ?></a>
+									<a href="#ResVertical" data-toggle="tab" class="tab-vertical"><?php echo esc_html__( 'Danh Mục', 'bakan' ); ?></a>
 								</li>
 							<?php endif; ?>
 							<?php } ?>

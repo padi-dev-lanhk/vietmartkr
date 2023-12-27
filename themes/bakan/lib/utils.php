@@ -86,39 +86,6 @@ function bakan_get_social() {
 	if ( !$social ) return false;
 	ob_start();
 ?>
-	<div class="info-detail">
-		<span class="title">Thông tin sản phẩm:</span>
-		<ul>
-			<li><?php the_field('thong_tin_1'); ?></li>
-			<li><?php the_field('thong_tin_2'); ?></li>
-			<li><?php the_field('thong_tin_3'); ?></li>
-			<li><?php the_field('thong_tin_4'); ?></li>
-			<li><?php the_field('thong_tin_5'); ?></li>
-			<li><?php the_field('thong_tin_6'); ?></li>
-			<li><?php the_field('thong_tin_7'); ?></li>
-			<li><?php the_field('thong_tin_8'); ?></li>
-			<li><?php the_field('thong_tin_9'); ?></li>
-			<li><?php the_field('thong_tin_10'); ?></li>
-		</ul>
-	</div>
-	<style type="text/css">
-		.info-detail .title{
-			color: #333;
-		    font-weight: bold;
-		    margin-bottom: 6px;
-		    display: block;
-		}
-		.info-detail ul{
-			list-style-type: none;
-			display: flex;
-		  flex-direction: column;
-		  flex-wrap: nowrap;
-		  justify-content: flex-start;
-		  align-items: flex-start;
-		  align-content: normal;
-		  gap: 10px;
-		}
-	</style>
 	<div class="social-share">
 		<div class="title-share"><?php esc_html_e( 'Share:','bakan' ) ?></div>
 		<div class="wrap-content">
