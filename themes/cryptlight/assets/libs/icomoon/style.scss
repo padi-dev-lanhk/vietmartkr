@@ -1,0 +1,120 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rryeob');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rryeob#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?rryeob') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?rryeob') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?rryeob##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ovaicomoon-"], [class*=" ovaicomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ovaicomoon-android {
+  &:before {
+    content: $ovaicomoon-android; 
+  }
+}
+.ovaicomoon-binance-coin {
+  &:before {
+    content: $ovaicomoon-binance-coin; 
+  }
+}
+.ovaicomoon-bitcoin {
+  &:before {
+    content: $ovaicomoon-bitcoin; 
+  }
+}
+.ovaicomoon-card-tick {
+  &:before {
+    content: $ovaicomoon-card-tick; 
+  }
+}
+.ovaicomoon-cellphone {
+  &:before {
+    content: $ovaicomoon-cellphone; 
+  }
+}
+.ovaicomoon-chart {
+  &:before {
+    content: $ovaicomoon-chart; 
+  }
+}
+.ovaicomoon-convert-card {
+  &:before {
+    content: $ovaicomoon-convert-card; 
+  }
+}
+.ovaicomoon-kyber-network {
+  &:before {
+    content: $ovaicomoon-kyber-network; 
+  }
+}
+.ovaicomoon-mobile {
+  &:before {
+    content: $ovaicomoon-mobile; 
+  }
+}
+.ovaicomoon-paypal {
+  &:before {
+    content: $ovaicomoon-paypal; 
+  }
+}
+.ovaicomoon-people {
+  &:before {
+    content: $ovaicomoon-people; 
+  }
+}
+.ovaicomoon-receipt-disscount {
+  &:before {
+    content: $ovaicomoon-receipt-disscount; 
+  }
+}
+.ovaicomoon-security-safe {
+  &:before {
+    content: $ovaicomoon-security-safe; 
+  }
+}
+.ovaicomoon-shopping-cart {
+  &:before {
+    content: $ovaicomoon-shopping-cart; 
+  }
+}
+.ovaicomoon-status-up {
+  &:before {
+    content: $ovaicomoon-status-up; 
+  }
+}
+.ovaicomoon-trontron {
+  &:before {
+    content: $ovaicomoon-trontron; 
+  }
+}
+.ovaicomoon-wallet {
+  &:before {
+    content: $ovaicomoon-wallet; 
+  }
+}
+.ovaicomoon-wallet-3 {
+  &:before {
+    content: $ovaicomoon-wallet-3; 
+  }
+}
+

@@ -1,0 +1,99 @@
+@mixin swe-tab-head {
+	.swe-button {
+		display: block;
+	}
+	.swe-tab-head {
+		position: absolute;
+		width: 250px;
+		top: 100%;
+		right: 0;
+		flex-direction: column;
+		z-index: 2;
+		background: var(--white-color);
+		text-align: left;
+		box-shadow: 0 0 10px 0 var(--black-transparent-5);
+		display: none;
+		.swe-tab-title + .swe-tab-title {
+			margin-left: 0px !important;
+		}
+	}
+}
+
+.swe-wrap-tabs {
+	ul.products {
+		margin-bottom: 0px;
+	}
+	.swe-wrap-tab-head {
+		display: flex;
+		.swe-tab-title {
+			padding: 5px 10px 5px 10px;
+			cursor: pointer;
+			@include transition(300ms);
+			+ .swe-tab-title {
+				margin-left: 5px;
+			}
+			&.active, &:hover {
+				background: var(--bg-block);
+			}
+		}
+		.swe-button {
+			display: none;
+		}
+		&.tabs-button {
+			position: relative;
+		}
+		&.btn-mobile {
+			@media (max-width: 767px) {
+				@include swe-tab-head;
+			}
+		}
+	}
+
+	.swe-wrap-tab-content {
+		.swe-tab-content {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&.style-1 {
+		.swe-tab-head {
+			display: flex;
+		}
+		.swe-wrap-tab-head {
+			&.btn-tablet {
+				@media (max-width: 1024px) {
+					@include swe-tab-head;
+				}
+			}
+			&.btn-desktop {
+				@include swe-tab-head;
+			}
+		}
+
+	}
+
+	&.style-2 {
+		flex-direction: row;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+		.swe-wrap-tab-head {
+			&.tabs-button {
+				@media (max-width: 767px) {
+					@include swe-tab-head;
+				}
+			}
+			.swe-tab-title {
+				+ .swe-tab-title {
+					margin-left: 0;
+				}
+			}
+		}
+		.swe-wrap-tab-content {
+			flex: 1;
+			overflow: hidden;
+		}
+	}
+}

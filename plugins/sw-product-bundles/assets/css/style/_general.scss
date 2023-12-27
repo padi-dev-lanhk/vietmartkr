@@ -1,0 +1,67 @@
+.swe-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	a {
+		transition: 300ms;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.swe-title {
+	margin-bottom: 0px;
+}
+
+.swe-button {
+	padding: 10px 25px;
+	font-size: 16px;
+	background: var(--light-gray-color);
+	color: var(--black-color);
+	border-radius: 3px;
+	display: inline-block;
+	transition: 300ms;
+	&:hover {
+		background: var(--dark-gray-color);
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.countdown-info {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	&.down {
+		display: none;
+	}
+	&.top {
+		position: absolute;
+		transform: translateY(-50%);
+		width: 100%;
+		top: 50%;
+	}
+}
+
+.countdown {
+	display: block;
+	text-align: center;
+	.countdown-times {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		> * {
+			flex: 1;
+			padding: 10px 0;
+		}
+		b {
+			display: block;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,2620 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptlight\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-13 08:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8\n"
+"X-Domain: cryptlight"
+
+#: template-parts/parts/meta.php:18
+msgid " 0 Comments"
+msgstr ""
+
+#: template-parts/parts/meta.php:19
+msgid " 1 Comment"
+msgstr ""
+
+#: elementor/widgets/team.php:133 elementor/widgets/team.php:138
+#: elementor/widgets/team.php:143 elementor/widgets/button-download.php:126
+#: elementor/widgets/button-download.php:130
+#: elementor/widgets/button-download.php:134
+#: elementor/widgets/image-gallery.php:83
+#: elementor/widgets/image-gallery.php:87
+#: elementor/widgets/image-gallery.php:91
+#: elementor/widgets/image-gallery.php:95
+msgid "#"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:70
+msgid "$0.9009/token"
+msgstr ""
+
+#. 1: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. 1: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: elementor/widgets/card-image.php:121 elementor/widgets/icon-list.php:99
+#: elementor/widgets/card-token.php:119
+msgid "1"
+msgstr ""
+
+#: elementor/widgets/card-image.php:122 elementor/widgets/icon-list.php:100
+#: elementor/widgets/card-token.php:120
+msgid "2"
+msgstr ""
+
+#: elementor/widgets/road-map.php:203 elementor/widgets/road-map.php:357
+msgid "2021-01-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:178 elementor/widgets/road-map.php:363
+msgid "2021-03-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:183 elementor/widgets/road-map.php:369
+msgid "2021-05-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:188 elementor/widgets/road-map.php:525
+msgid "2021-07-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:193 elementor/widgets/road-map.php:531
+msgid "2021-09-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:198 elementor/widgets/road-map.php:687
+msgid "2021-11-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:693
+msgid "2022-01-01"
+msgstr ""
+
+#: elementor/widgets/road-map.php:699
+msgid "2022-03-01"
+msgstr ""
+
+#: elementor/widgets/card-image.php:123 elementor/widgets/icon-list.php:101
+#: elementor/widgets/card-token.php:121
+msgid "3"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:61
+msgid "67% Bonus"
+msgstr ""
+
+#: elementor/widgets/details.php:62
+msgid "900.0000 ICC (9%)"
+msgstr ""
+
+#: inc/class-main.php:111
+msgctxt ": on or off"
+msgid "on"
+msgstr ""
+
+#. Author of the theme
+msgid "<a href=\"https://themeforest.net/user/ovatheme\">Ovatheme</a>"
+msgstr ""
+
+#: elementor/widgets/countdown.php:321
+msgid "Actions After Expire"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: install-resource/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: inc/class-elementor.php:958
+msgid "Active Background "
+msgstr ""
+
+#: elementor/widgets/chart.php:69
+msgid "Add unique ID for chart."
+msgstr ""
+
+#: elementor/widgets/heading.php:53
+msgid "Add Your Heading"
+msgstr ""
+
+#: elementor/widgets/countdown.php:380
+msgid "Add Your Title"
+msgstr ""
+
+#: elementor/widgets/heading.php:150
+msgid "After"
+msgstr ""
+
+#: elementor/widgets/road-map.php:189
+msgid ""
+"After finishing researching and making a plan, right away we designed "
+"platform and demonstrated technik"
+msgstr ""
+
+#: inc/class-elementor.php:119 elementor/widgets/card.php:79
+#: elementor/widgets/sale-token.php:76 elementor/widgets/details.php:68
+#: elementor/widgets/button-download.php:67 elementor/widgets/countdown.php:502
+#: elementor/widgets/countdown.php:656 elementor/widgets/countdown.php:783
+#: elementor/widgets/heading.php:104 elementor/widgets/chart.php:179
+#: elementor/widgets/header-banner.php:286 elementor/widgets/logo.php:77
+#: elementor/widgets/button.php:79
+msgid "Alignment"
+msgstr ""
+
+#: elementor/widgets/progress.php:225
+msgid "Alignment List"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. 1: dashboard link.
+#: install-resource/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: elementor/widgets/road-map.php:576 elementor/widgets/road-map.php:688
+msgid "Alpha test"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: install-resource/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: elementor/widgets/road-map.php:134 elementor/widgets/road-map.php:313
+#: elementor/widgets/road-map.php:481 elementor/widgets/road-map.php:643
+msgid "Animation Content"
+msgstr ""
+
+#: elementor/widgets/road-map.php:95 elementor/widgets/road-map.php:274
+#: elementor/widgets/road-map.php:442 elementor/widgets/road-map.php:604
+msgid "Animation Date"
+msgstr ""
+
+#: elementor/widgets/road-map.php:120 elementor/widgets/road-map.php:159
+#: elementor/widgets/road-map.php:299 elementor/widgets/road-map.php:338
+#: elementor/widgets/road-map.php:467 elementor/widgets/road-map.php:506
+#: elementor/widgets/road-map.php:629 elementor/widgets/road-map.php:668
+msgid "Animation Delay"
+msgstr ""
+
+#: elementor/widgets/road-map.php:103 elementor/widgets/road-map.php:142
+#: elementor/widgets/road-map.php:282 elementor/widgets/road-map.php:321
+#: elementor/widgets/road-map.php:450 elementor/widgets/road-map.php:489
+#: elementor/widgets/road-map.php:612 elementor/widgets/road-map.php:651
+msgid "Animation Duration"
+msgstr ""
+
+#: elementor/widgets/road-map.php:414 elementor/widgets/road-map.php:526
+msgid "App beta test"
+msgstr ""
+
+#: inc/class-customize.php:488
+msgid "Archive"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:35
+msgid "Archive by date"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:40
+msgid "Archive by month"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:112
+msgid "Archive by tag"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:44
+msgid "Archive by year"
+msgstr ""
+
+#: inc/class-customize.php:637
+msgid "Archive Layout"
+msgstr ""
+
+#: widgets/archives.php:7
+msgid "Archives"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:118
+msgid "Articles posted by"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: elementor/widgets/icon.php:139
+msgid "Autoplay"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-woo.php:158
+msgid "Awaiting product image"
+msgstr ""
+
+#: inc/class-elementor.php:159 inc/class-elementor.php:279
+#: inc/class-elementor.php:943 elementor/widgets/sale-token.php:254
+#: elementor/widgets/road-map.php:890 elementor/widgets/road-map.php:995
+#: elementor/widgets/icon.php:255 elementor/widgets/icon.php:304
+#: elementor/widgets/icon.php:644 elementor/widgets/card-image.php:151
+#: elementor/widgets/card-image.php:171 elementor/widgets/card-image.php:294
+#: elementor/widgets/card-image.php:314 elementor/widgets/progress.php:171
+#: elementor/widgets/progress.php:285 elementor/widgets/icon-list.php:166
+#: elementor/widgets/icon-list.php:197
+#: elementor/widgets/choice-language.php:138
+#: elementor/widgets/choice-language.php:171
+#: elementor/widgets/choice-language.php:346
+#: elementor/widgets/choice-language.php:379
+#: elementor/widgets/button-download.php:164
+#: elementor/widgets/button-download.php:184
+#: elementor/widgets/button-download.php:458
+#: elementor/widgets/button-download.php:490
+#: elementor/widgets/countdown.php:401 elementor/widgets/countdown.php:634
+#: elementor/widgets/menu-footer.php:80 elementor/widgets/menu-footer.php:178
+#: elementor/widgets/menu-nav.php:140 elementor/widgets/card-token.php:149
+#: elementor/widgets/card-token.php:169 elementor/widgets/button.php:125
+#: elementor/widgets/button.php:145
+msgid "Background"
+msgstr ""
+
+#: inc/class-elementor.php:185 inc/class-elementor.php:305
+msgid "Background Active"
+msgstr ""
+
+#: elementor/widgets/card.php:288 elementor/widgets/card-token.php:132
+msgid "Background Card"
+msgstr ""
+
+#: elementor/widgets/card.php:134 elementor/widgets/card.php:178
+#: elementor/widgets/team.php:210 elementor/widgets/team.php:295
+#: elementor/widgets/ico-crypto.php:142
+msgid "Background Color"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:120
+msgid "Background Cover Color"
+msgstr ""
+
+#: inc/class-elementor.php:211 inc/class-elementor.php:331
+#: inc/class-elementor.php:1147
+msgid "Background Hover"
+msgstr ""
+
+#: elementor/widgets/menu-nav.php:153
+msgid "Background Item Hover"
+msgstr ""
+
+#: elementor/widgets/road-map.php:903
+msgid "Background Not Done"
+msgstr ""
+
+#: elementor/widgets/heading.php:149
+msgid "Before"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: elementor/widgets/road-map.php:694
+msgid "Benefits"
+msgstr ""
+
+#: inc/class-customize.php:483 template-parts/parts/breadcrumbs_title.php:13
+#: template-parts/parts/breadcrumbs.php:122
+msgid "Blog"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:58 elementor/widgets/sale-token.php:172
+#: elementor/widgets/progress.php:146
+msgid "Bonus"
+msgstr ""
+
+#: elementor/widgets/road-map.php:740 elementor/widgets/icon.php:269
+#: elementor/widgets/icon.php:318
+msgid "Border Color"
+msgstr ""
+
+#: inc/class-elementor.php:396
+msgid "Border Color Active"
+msgstr ""
+
+#: inc/class-elementor.php:493
+msgid "Border Color Active Mobile"
+msgstr ""
+
+#: inc/class-elementor.php:411
+msgid "Border Color Hover"
+msgstr ""
+
+#: inc/class-elementor.php:384
+msgid "Border Desktop"
+msgstr ""
+
+#: inc/class-elementor.php:470
+msgid "Border Mobile"
+msgstr ""
+
+#: inc/class-elementor.php:425 inc/class-elementor.php:973
+#: elementor/widgets/icon.php:434 elementor/widgets/card-image.php:220
+#: elementor/widgets/card-image.php:336 elementor/widgets/progress.php:260
+#: elementor/widgets/button-download.php:214
+#: elementor/widgets/button-download.php:235
+#: elementor/widgets/countdown.php:543 elementor/widgets/countdown.php:724
+#: elementor/widgets/card-token.php:218 elementor/widgets/card-token.php:291
+#: elementor/widgets/button.php:167
+msgid "Border Radius"
+msgstr ""
+
+#: inc/class-elementor.php:507
+msgid "Border Radius Mobile"
+msgstr ""
+
+#: elementor/widgets/icon.php:784 elementor/widgets/countdown.php:180
+#: elementor/widgets/heading.php:388
+msgid "Bottom"
+msgstr ""
+
+#: elementor/widgets/icon.php:931
+msgid "Bottom Border"
+msgstr ""
+
+#: inc/class-elementor.php:174 inc/class-elementor.php:200
+#: inc/class-elementor.php:294 inc/class-elementor.php:320
+#: elementor/widgets/icon.php:426 elementor/widgets/button.php:180
+msgid "Box Shadow"
+msgstr ""
+
+#: inc/class-hook.php:316
+msgid "Boxed"
+msgstr ""
+
+#: inc/class-customize.php:413
+msgid "Boxed Offset (px)"
+msgstr ""
+
+#: elementor/widgets/countdown.php:393
+msgid "Boxes"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:222
+msgid "Breadcrumbs Color"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:241
+msgid "Breadcrumbs Color hover"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:270
+msgid "Breadcrumbs Padding"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:260
+msgid "Breadcrumbs Typography"
+msgstr ""
+
+#: elementor/widgets/chart.php:140
+msgid "Business Development"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:98 elementor/widgets/heading.php:152
+#: elementor/widgets/button.php:23 elementor/widgets/button.php:57
+#: elementor/widgets/button.php:108
+msgid "Button"
+msgstr ""
+
+#: elementor/widgets/button-download.php:20
+msgid "Button Download"
+msgstr ""
+
+#: elementor/widgets/card.php:21
+msgid "Card"
+msgstr ""
+
+#: elementor/widgets/card-image.php:21
+msgid "Card Image"
+msgstr ""
+
+#: elementor/widgets/card-token.php:20
+msgid "Card Token"
+msgstr ""
+
+#: widgets/categories.php:8
+msgid "Categories"
+msgstr ""
+
+#: inc/class-elementor.php:127 inc/class-elementor.php:853
+#: elementor/widgets/card.php:87 elementor/widgets/sale-token.php:84
+#: elementor/widgets/progress.php:233 elementor/widgets/details.php:76
+#: elementor/widgets/button-download.php:75 elementor/widgets/countdown.php:510
+#: elementor/widgets/countdown.php:791 elementor/widgets/heading.php:112
+#: elementor/widgets/chart.php:187 elementor/widgets/header-banner.php:294
+#: elementor/widgets/logo.php:85 elementor/widgets/button.php:87
+msgid "Center"
+msgstr ""
+
+#: elementor/widgets/team.php:82
+msgid "CEO & CFO"
+msgstr ""
+
+#: elementor/widgets/team.php:73
+msgid "Charlee Mangar"
+msgstr ""
+
+#: elementor/widgets/chart.php:21
+msgid "Chart"
+msgstr ""
+
+#: elementor/widgets/chart.php:66
+msgid "Chart ID"
+msgstr ""
+
+#: elementor/widgets/chart.php:76
+msgid "Chart Radius"
+msgstr ""
+
+#: elementor/widgets/chart.php:46 elementor/widgets/chart.php:171
+msgid "Charts"
+msgstr ""
+
+#: elementor/widgets/choice-language.php:21
+msgid "Choice Language"
+msgstr ""
+
+#: elementor/widgets/image-gallery.php:52
+msgid "Choose Image"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:176
+msgid "Choose Title Format"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:314
+msgid "Class"
+msgstr ""
+
+#: elementor/widgets/team.php:92 elementor/widgets/icon-list.php:50
+#: elementor/widgets/ico-crypto.php:55
+msgid "Class Icon"
+msgstr ""
+
+#: inc/class-customize.php:250 inc/class-elementor.php:602
+#: inc/class-elementor.php:764 elementor/widgets/card.php:122
+#: elementor/widgets/card.php:167 elementor/widgets/card.php:220
+#: elementor/widgets/card.php:262 elementor/widgets/card.php:296
+#: elementor/widgets/team.php:171 elementor/widgets/sale-token.php:122
+#: elementor/widgets/sale-token.php:157 elementor/widgets/sale-token.php:188
+#: elementor/widgets/sale-token.php:229 elementor/widgets/sale-token.php:261
+#: elementor/widgets/road-map.php:727 elementor/widgets/road-map.php:877
+#: elementor/widgets/road-map.php:960 elementor/widgets/icon.php:243
+#: elementor/widgets/icon.php:292 elementor/widgets/icon.php:517
+#: elementor/widgets/card-image.php:380 elementor/widgets/card-image.php:400
+#: elementor/widgets/card-image.php:454 elementor/widgets/card-image.php:474
+#: elementor/widgets/progress.php:316 elementor/widgets/progress.php:371
+#: elementor/widgets/progress.php:429 elementor/widgets/icon-list.php:177
+#: elementor/widgets/icon-list.php:208 elementor/widgets/icon-list.php:248
+#: elementor/widgets/details.php:114 elementor/widgets/details.php:156
+#: elementor/widgets/choice-language.php:150
+#: elementor/widgets/choice-language.php:183
+#: elementor/widgets/choice-language.php:267
+#: elementor/widgets/choice-language.php:288
+#: elementor/widgets/choice-language.php:358
+#: elementor/widgets/choice-language.php:391
+#: elementor/widgets/button-download.php:284
+#: elementor/widgets/button-download.php:304
+#: elementor/widgets/button-download.php:371
+#: elementor/widgets/button-download.php:391
+#: elementor/widgets/button-download.php:469
+#: elementor/widgets/button-download.php:502
+#: elementor/widgets/countdown.php:412 elementor/widgets/countdown.php:579
+#: elementor/widgets/countdown.php:645 elementor/widgets/countdown.php:772
+#: elementor/widgets/heading.php:182 elementor/widgets/heading.php:203
+#: elementor/widgets/heading.php:280 elementor/widgets/heading.php:303
+#: elementor/widgets/heading.php:478 elementor/widgets/menu-footer.php:100
+#: elementor/widgets/menu-footer.php:120 elementor/widgets/menu-footer.php:198
+#: elementor/widgets/menu-footer.php:218 elementor/widgets/chart.php:112
+#: elementor/widgets/ico-crypto.php:131 elementor/widgets/ico-crypto.php:241
+#: elementor/widgets/ico-crypto.php:294 elementor/widgets/card-token.php:334
+#: elementor/widgets/card-token.php:354 elementor/widgets/card-token.php:408
+#: elementor/widgets/card-token.php:428 elementor/widgets/button.php:208
+#: elementor/widgets/button.php:228
+msgid "Color"
+msgstr ""
+
+#: inc/class-elementor.php:253 inc/class-elementor.php:616
+#: inc/class-elementor.php:1158 elementor/widgets/card.php:307
+#: elementor/widgets/sale-token.php:271 elementor/widgets/icon.php:617
+msgid "Color Hover"
+msgstr ""
+
+#: elementor/widgets/team.php:275
+msgid "Color rectangle"
+msgstr ""
+
+#: elementor/widgets/team.php:265
+msgid "Color sub-title"
+msgstr ""
+
+#: elementor/widgets/team.php:255
+msgid "Color Title"
+msgstr ""
+
+#: inc/class-elementor.php:225
+msgid "Color Title Desktop"
+msgstr ""
+
+#: inc/class-elementor.php:239
+msgid "Color Title Desktop Active"
+msgstr ""
+
+#: inc/class-elementor.php:345
+msgid "Color Title Mobile"
+msgstr ""
+
+#: inc/class-elementor.php:359
+msgid "Color Title Mobile Active"
+msgstr ""
+
+#: elementor/widgets/card-image.php:118 elementor/widgets/icon-list.php:96
+#: elementor/widgets/card-token.php:116
+msgid "Column"
+msgstr ""
+
+#: elementor/widgets/image-gallery.php:107
+msgid "Columns"
+msgstr ""
+
+#: elementor/widgets/card-image.php:107
+msgid "Combining and splitting value"
+msgstr ""
+
+#: template-parts/parts/meta.php:22
+msgid "Comment off"
+msgstr ""
+
+#: template-parts/parts/meta.php:20
+msgid "Comments"
+msgstr ""
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments
+#: comments.php:16
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:12
+msgctxt "comments title"
+msgid "One Comment"
+msgstr ""
+
+#: elementor/widgets/road-map.php:246 elementor/widgets/road-map.php:358
+msgid "Concept"
+msgstr ""
+
+#: elementor/widgets/road-map.php:256 elementor/widgets/road-map.php:359
+#: elementor/widgets/road-map.php:365 elementor/widgets/road-map.php:371
+#: elementor/widgets/road-map.php:424 elementor/widgets/road-map.php:527
+#: elementor/widgets/road-map.php:533 elementor/widgets/road-map.php:586
+#: elementor/widgets/road-map.php:689 elementor/widgets/road-map.php:695
+#: elementor/widgets/road-map.php:701
+msgid "Concept Generation,Team Assemble"
+msgstr ""
+
+#: install-resource/active-plugins.php:18
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/class-customize.php:342
+msgid "Container (px)"
+msgstr ""
+
+#: inc/class-elementor.php:552 elementor/widgets/card.php:44
+#: elementor/widgets/team.php:49 elementor/widgets/road-map.php:75
+#: elementor/widgets/road-map.php:253 elementor/widgets/road-map.php:421
+#: elementor/widgets/road-map.php:583 elementor/widgets/road-map.php:952
+#: elementor/widgets/card-image.php:45 elementor/widgets/card-image.php:134
+#: elementor/widgets/icon-list.php:40 elementor/widgets/choice-language.php:43
+#: elementor/widgets/button-download.php:41
+#: elementor/widgets/button-download.php:147
+#: elementor/widgets/ico-crypto.php:45 elementor/widgets/header-banner.php:92
+#: elementor/widgets/image-gallery.php:43 elementor/widgets/card-token.php:42
+#: elementor/widgets/button.php:47
+msgid "Content"
+msgstr ""
+
+#: inc/class-elementor.php:991 inc/class-elementor.php:1059
+#: inc/class-elementor.php:1095
+msgid "Content Options"
+msgstr ""
+
+#: elementor/widgets/chart.php:125
+msgid "Contingency"
+msgstr ""
+
+#: elementor/widgets/countdown.php:20 elementor/widgets/countdown.php:43
+msgid "Countdown"
+msgstr ""
+
+#: elementor/widgets/countdown.php:341
+msgid "Countdown timeout"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:92
+msgid "Crowd Wisdom"
+msgstr ""
+
+#: inc/class-elementor.php:39
+msgid "Cryptlight"
+msgstr ""
+
+#. Name of the theme
+msgid "cryptlight"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Cryptlight is a modernized take on an ever-popular WordPress. It has custom "
+"color options with beautiful default color schemes, a harmonious fluid grid "
+"using a mobile-first approach, and impeccable polish in every detail. "
+"Cryptlight will make your WordPress look beautiful everywhere. Created by <a "
+"href=\"https://themeforest.net/user/ovatheme\">Ovatheme</a>"
+msgstr ""
+
+#: elementor/widgets/choice-language.php:52
+#: elementor/widgets/choice-language.php:121
+msgid "Current Language"
+msgstr ""
+
+#: inc/class-customize.php:204 inc/class-customize.php:216
+#: inc/class-customize.php:233
+msgid "Custom Font"
+msgstr ""
+
+#: elementor/widgets/countdown.php:190
+msgid "Custom Label"
+msgstr ""
+
+#: elementor/widgets/logo.php:52
+msgid "Custom URL"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:48 elementor/widgets/sale-token.php:106
+#: elementor/widgets/road-map.php:65 elementor/widgets/road-map.php:234
+#: elementor/widgets/road-map.php:402 elementor/widgets/road-map.php:564
+#: elementor/widgets/road-map.php:719
+msgid "Date"
+msgstr ""
+
+#: elementor/widgets/road-map.php:68 elementor/widgets/road-map.php:237
+#: elementor/widgets/road-map.php:405 elementor/widgets/road-map.php:567
+#: elementor/widgets/countdown.php:66
+#, php-format
+msgid "Date set according to your timezone: %s."
+msgstr ""
+
+#: elementor/widgets/countdown.php:201 elementor/widgets/countdown.php:203
+#: elementor/widgets/countdown.php:204
+msgid "Day"
+msgstr ""
+
+#: elementor/widgets/countdown.php:116 elementor/widgets/countdown.php:216
+#: elementor/widgets/countdown.php:218 elementor/widgets/countdown.php:219
+msgid "Days"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:87
+msgid "Decentralized Platform"
+msgstr ""
+
+#: inc/class-hook.php:159 inc/class-hook.php:190 inc/class-customize.php:508
+#: elementor/widgets/menu-nav.php:231
+msgid "Default"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:73
+msgid "desc"
+msgstr ""
+
+#: elementor/widgets/card.php:70 elementor/widgets/card.php:246
+#: elementor/widgets/card-image.php:77 elementor/widgets/card-image.php:437
+#: elementor/widgets/details.php:59 elementor/widgets/details.php:140
+#: elementor/widgets/heading.php:60 elementor/widgets/heading.php:470
+#: elementor/widgets/ico-crypto.php:278 elementor/widgets/card-token.php:75
+#: elementor/widgets/card-token.php:391
+msgid "Description"
+msgstr ""
+
+#: template-parts/footer-default.php:4
+msgid "Design and Develop by Ovatheme"
+msgstr ""
+
+#: inc/class-elementor.php:147
+msgid "Desktop"
+msgstr ""
+
+#: elementor/widgets/logo.php:106
+msgid "Desktop Logo"
+msgstr ""
+
+#: elementor/widgets/logo.php:150
+msgid "Desktop Logo Height"
+msgstr ""
+
+#: elementor/widgets/logo.php:130
+msgid "Desktop Logo Width"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:42 elementor/widgets/details.php:19
+#: elementor/widgets/details.php:42
+msgid "Details"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-elementor.php:102 inc/class-elementor.php:711
+#: inc/class-elementor.php:849
+msgid "Display"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:109
+msgid "Display Background by Feature Image in Post/Page"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:100
+msgid "Display Boxed Content"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:185
+msgid "DIV"
+msgstr ""
+
+#: elementor/widgets/chart.php:56
+msgid "Doughnut"
+msgstr ""
+
+#: elementor/widgets/button-download.php:51
+msgid "Dowload"
+msgstr ""
+
+#: elementor/widgets/choice-language.php:83
+#: elementor/widgets/choice-language.php:329
+msgid "Dropdown Language"
+msgstr ""
+
+#: elementor/widgets/countdown.php:53 elementor/widgets/countdown.php:63
+msgid "Due Date"
+msgstr ""
+
+#: template-parts/parts/comment.php:50
+msgid "Edit"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:93
+msgid "eicon-globe"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:98
+msgid "eicon-star"
+msgstr ""
+
+#: install-resource/active-plugins.php:13
+msgid "Elementor"
+msgstr ""
+
+#: elementor/widgets/icon.php:114
+msgid "Email"
+msgstr ""
+
+#: elementor/widgets/choice-language.php:75
+msgid "EN"
+msgstr ""
+
+#: elementor/widgets/button-download.php:98
+#: elementor/widgets/button-download.php:125
+msgid "English"
+msgstr ""
+
+#: elementor/widgets/progress.php:53
+msgid "Enter your title"
+msgstr ""
+
+#: elementor/widgets/countdown.php:54
+msgid "Evergreen Timer"
+msgstr ""
+
+#: inc/class-customize.php:146
+msgid "Example: 0px, 0.5em"
+msgstr ""
+
+#: inc/class-customize.php:107
+msgid "Example: 16px, 1.2em"
+msgstr ""
+
+#: inc/class-customize.php:126
+msgid "Example: 23px, 1.6em"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: elementor/widgets/team.php:142
+msgid "fab fa-linkedin-in"
+msgstr ""
+
+#: elementor/widgets/team.php:136
+msgid "Facebook"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:52 elementor/widgets/icon-list.php:74
+#: elementor/widgets/icon-list.php:78 elementor/widgets/icon-list.php:82
+#: elementor/widgets/icon-list.php:86 elementor/widgets/ico-crypto.php:57
+msgid "fas fa-check"
+msgstr ""
+
+#: elementor/widgets/road-map.php:109 elementor/widgets/road-map.php:148
+#: elementor/widgets/road-map.php:288 elementor/widgets/road-map.php:327
+#: elementor/widgets/road-map.php:456 elementor/widgets/road-map.php:495
+#: elementor/widgets/road-map.php:618 elementor/widgets/road-map.php:657
+msgid "Fast"
+msgstr ""
+
+#: inc/class-elementor.php:80
+msgid "Flip"
+msgstr ""
+
+#: inc/class-customize.php:106
+msgid "Font Size"
+msgstr ""
+
+#: inc/class-customize.php:454 inc/class-customize.php:557
+#: inc/class-customize.php:616
+msgid "Footer"
+msgstr ""
+
+#: inc/class-customize.php:468
+msgid "Footer Default"
+msgstr ""
+
+#: elementor/widgets/countdown.php:76
+msgid "Format"
+msgstr ""
+
+#: elementor/widgets/button-download.php:129
+msgid "French"
+msgstr ""
+
+#: elementor/widgets/image-gallery.php:120
+msgid "Gallery"
+msgstr ""
+
+#: elementor/widgets/button-download.php:133
+msgid "German"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:40 elementor/widgets/menu-nav.php:36
+msgid "Global"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:179
+msgid "H1"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:180
+msgid "H2"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:181
+msgid "H3"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:182
+msgid "H4"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:183
+msgid "H5"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:184
+msgid "H6"
+msgstr ""
+
+#: inc/class-customize.php:426 inc/class-customize.php:540
+#: inc/class-customize.php:599
+msgid "Header"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:42
+msgid "Header Banner"
+msgstr ""
+
+#: inc/class-customize.php:440
+msgid "Header Default"
+msgstr ""
+
+#: inc/class-elementor.php:31
+msgid "Header Footer"
+msgstr ""
+
+#: elementor/widgets/heading.php:20 elementor/widgets/heading.php:42
+msgid "Heading"
+msgstr ""
+
+#: elementor/widgets/icon.php:369 elementor/widgets/icon.php:688
+#: elementor/widgets/icon.php:901 elementor/widgets/icon.php:984
+#: elementor/widgets/progress.php:182 elementor/widgets/countdown.php:454
+#: elementor/widgets/heading.php:440 elementor/widgets/ico-crypto.php:192
+msgid "Height"
+msgstr ""
+
+#: inc/class-elementor.php:81
+msgid "Helix"
+msgstr ""
+
+#: elementor/widgets/road-map.php:220 elementor/widgets/road-map.php:388
+#: elementor/widgets/road-map.php:550 elementor/widgets/countdown.php:80
+#: elementor/widgets/countdown.php:119 elementor/widgets/countdown.php:130
+#: elementor/widgets/countdown.php:141 elementor/widgets/countdown.php:152
+#: elementor/widgets/countdown.php:163 elementor/widgets/countdown.php:325
+#: elementor/widgets/countdown.php:370 elementor/widgets/heading.php:138
+#: elementor/widgets/ico-crypto.php:113
+msgid "Hide"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3594
+msgid "Hide Details"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs_title.php:5
+#: template-parts/parts/breadcrumbs_title.php:9
+#: template-parts/parts/breadcrumbs.php:13
+#: template-parts/parts/breadcrumbs.php:13
+#: template-parts/parts/breadcrumbs.php:176
+msgid "Home"
+msgstr ""
+
+#: elementor/widgets/logo.php:50
+msgid "Home Page"
+msgstr ""
+
+#: elementor/widgets/countdown.php:231 elementor/widgets/countdown.php:233
+#: elementor/widgets/countdown.php:234
+msgid "Hour"
+msgstr ""
+
+#: elementor/widgets/countdown.php:90 elementor/widgets/countdown.php:93
+#: elementor/widgets/countdown.php:127 elementor/widgets/countdown.php:246
+#: elementor/widgets/countdown.php:248 elementor/widgets/countdown.php:249
+msgid "Hours"
+msgstr ""
+
+#: elementor/widgets/card.php:160 elementor/widgets/team.php:194
+#: elementor/widgets/team.php:288 elementor/widgets/icon.php:285
+#: elementor/widgets/card-image.php:164 elementor/widgets/card-image.php:307
+#: elementor/widgets/card-image.php:393 elementor/widgets/card-image.php:467
+#: elementor/widgets/icon-list.php:190
+#: elementor/widgets/choice-language.php:164
+#: elementor/widgets/choice-language.php:281
+#: elementor/widgets/choice-language.php:372
+#: elementor/widgets/button-download.php:177
+#: elementor/widgets/button-download.php:228
+#: elementor/widgets/button-download.php:297
+#: elementor/widgets/button-download.php:384
+#: elementor/widgets/button-download.php:483 elementor/widgets/heading.php:196
+#: elementor/widgets/heading.php:296 elementor/widgets/menu-footer.php:113
+#: elementor/widgets/menu-footer.php:211 elementor/widgets/card-token.php:162
+#: elementor/widgets/card-token.php:347 elementor/widgets/card-token.php:421
+#: elementor/widgets/button.php:138 elementor/widgets/button.php:221
+msgid "Hover"
+msgstr ""
+
+#: elementor/widgets/heading.php:84
+msgid "HTML Tag"
+msgstr ""
+
+#. URI of the theme
+msgid "https://themeforest.net/user/ovatheme/portfolio"
+msgstr ""
+
+#: elementor/widgets/team.php:111 elementor/widgets/button-download.php:107
+#: elementor/widgets/logo.php:66 elementor/widgets/button.php:66
+msgid "https://your-link.com"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:61 elementor/widgets/ico-crypto.php:66
+msgid "ICO CRYPTO"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:22
+msgid "Ico Crypto"
+msgstr ""
+
+#: inc/class-elementor.php:579 elementor/widgets/card.php:51
+#: elementor/widgets/card.php:108 elementor/widgets/road-map.php:869
+#: elementor/widgets/icon.php:22 elementor/widgets/icon.php:46
+#: elementor/widgets/icon.php:227 elementor/widgets/icon-list.php:149
+#: elementor/widgets/choice-language.php:250
+#: elementor/widgets/button-download.php:58
+#: elementor/widgets/button-download.php:354
+#: elementor/widgets/ico-crypto.php:123
+msgid "Icon"
+msgstr ""
+
+#: elementor/widgets/icon.php:66
+msgid "Icon Class"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:19
+msgid "Icon List"
+msgstr ""
+
+#: inc/class-elementor.php:837 inc/class-elementor.php:1113
+msgid "Icon Options"
+msgstr ""
+
+#: elementor/widgets/team.php:156
+msgid "Icons"
+msgstr ""
+
+#: elementor/widgets/card-token.php:101
+msgid ""
+"If we detect a potential threat to your identity, we will alert you by text, "
+"email, phone or app"
+msgstr ""
+
+#: elementor/widgets/card-image.php:54 elementor/widgets/card-image.php:246
+#: elementor/widgets/logo.php:39 elementor/widgets/card-token.php:51
+#: elementor/widgets/card-token.php:244
+msgid "Image"
+msgstr ""
+
+#: elementor/widgets/image-gallery.php:20
+msgid "Image Gallery"
+msgstr ""
+
+#: elementor/widgets/team.php:56
+msgid "Image Team"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:75
+msgid "In this time period"
+msgstr ""
+
+#: elementor/widgets/road-map.php:77 elementor/widgets/road-map.php:179
+msgid ""
+"In this time period, our Intelligent and talent founders had a concept of "
+"creating our ICO to call for investment"
+msgstr ""
+
+#: elementor/widgets/team.php:228
+msgid "Info"
+msgstr ""
+
+#: elementor/widgets/menu-nav.php:235
+msgid "Inline"
+msgstr ""
+
+#: inc/class-elementor.php:106
+msgid "Inline Block"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: install-resource/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#. 1: install status, 2: update status
+#: install-resource/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: install-resource/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: install-resource/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: template-parts/404.php:5 template-parts/post/content-none.php:14
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: elementor/widgets/menu-nav.php:264
+msgid "Item"
+msgstr ""
+
+#: elementor/widgets/progress.php:114
+msgid "Item Color"
+msgstr ""
+
+#: inc/class-elementor.php:1029
+msgid "Item Margin"
+msgstr ""
+
+#: inc/class-elementor.php:729
+msgid "Item Options"
+msgstr ""
+
+#: elementor/widgets/road-map.php:173 elementor/widgets/icon-list.php:68
+#: elementor/widgets/icon-list.php:112
+#: elementor/widgets/button-download.php:120
+#: elementor/widgets/button-download.php:441 elementor/widgets/chart.php:120
+#: elementor/widgets/ico-crypto.php:82
+msgid "Items"
+msgstr ""
+
+#: elementor/widgets/road-map.php:352
+msgid "Items 1"
+msgstr ""
+
+#: elementor/widgets/road-map.php:520
+msgid "Items 2"
+msgstr ""
+
+#: elementor/widgets/road-map.php:682
+msgid "Items 3"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:51
+msgid "Jan 15 - Feb 15"
+msgstr ""
+
+#: elementor/widgets/heading.php:120
+msgid "Justified"
+msgstr ""
+
+#: elementor/widgets/chart.php:93
+msgid "Label"
+msgstr ""
+
+#: elementor/widgets/countdown.php:571
+msgid "Labels"
+msgstr ""
+
+#: elementor/widgets/choice-language.php:103
+#: elementor/widgets/button-download.php:96
+msgid "Language"
+msgstr ""
+
+#: inc/class-customize.php:307 inc/class-customize.php:359
+#: inc/class-customize.php:522 inc/class-customize.php:581
+#: elementor/widgets/countdown.php:172 elementor/widgets/menu-nav.php:227
+msgid "Layout"
+msgstr ""
+
+#: inc/class-elementor.php:123 elementor/widgets/card.php:83
+#: elementor/widgets/sale-token.php:80 elementor/widgets/icon.php:816
+#: elementor/widgets/menu-canvas.php:69 elementor/widgets/progress.php:125
+#: elementor/widgets/progress.php:229 elementor/widgets/details.php:72
+#: elementor/widgets/button-download.php:71 elementor/widgets/countdown.php:506
+#: elementor/widgets/countdown.php:660 elementor/widgets/countdown.php:787
+#: elementor/widgets/heading.php:108 elementor/widgets/heading.php:335
+#: elementor/widgets/chart.php:183 elementor/widgets/header-banner.php:290
+#: elementor/widgets/logo.php:81 elementor/widgets/button.php:83
+msgid "Left"
+msgstr ""
+
+#: elementor/widgets/icon.php:848
+msgid "Left Border"
+msgstr ""
+
+#: inc/class-hook.php:223 inc/class-customize.php:644
+#: inc/class-customize.php:712
+msgid "Left Sidebar"
+msgstr ""
+
+#: elementor/widgets/chart.php:135
+msgid "Legal & Regulation"
+msgstr ""
+
+#: inc/class-customize.php:145
+msgid "Letter Spacing"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:147 elementor/widgets/icon.php:636
+#: elementor/widgets/heading.php:135 elementor/widgets/heading.php:263
+msgid "Line"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:110
+msgid "Line Before"
+msgstr ""
+
+#: elementor/widgets/road-map.php:777
+msgid "Line Color"
+msgstr ""
+
+#: elementor/widgets/road-map.php:789
+msgid "Line Color Not Done"
+msgstr ""
+
+#: elementor/widgets/road-map.php:833
+msgid "Line Height"
+msgstr ""
+
+#: inc/class-customize.php:125
+msgid "Line height"
+msgstr ""
+
+#: elementor/widgets/road-map.php:801
+msgid "Line Width"
+msgstr ""
+
+#: elementor/widgets/progress.php:296
+msgid "Linear Gradient"
+msgstr ""
+
+#: elementor/widgets/team.php:102 elementor/widgets/icon.php:96
+#: elementor/widgets/menu-canvas.php:136
+#: elementor/widgets/button-download.php:105 elementor/widgets/heading.php:69
+#: elementor/widgets/logo.php:47 elementor/widgets/logo.php:61
+#: elementor/widgets/image-gallery.php:66 elementor/widgets/menu-nav.php:75
+#: elementor/widgets/menu-nav.php:167 elementor/widgets/button.php:64
+msgid "Link"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:166 elementor/widgets/menu-nav.php:105
+#: elementor/widgets/menu-nav.php:193
+msgid "Link Active"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:153 elementor/widgets/menu-nav.php:92
+#: elementor/widgets/menu-nav.php:180
+msgid "Link Hover"
+msgstr ""
+
+#: elementor/widgets/icon.php:605
+msgid "Link Style"
+msgstr ""
+
+#: elementor/widgets/team.php:141
+msgid "Linkedin"
+msgstr ""
+
+#: elementor/widgets/team.php:118
+msgid "List Title Icon"
+msgstr ""
+
+#: inc/class-elementor.php:715
+msgid "List-item"
+msgstr ""
+
+#: customize/custom-control/google-font.php:122
+msgid "Load Font Weight"
+msgstr ""
+
+#: inc/class-woo.php:189 inc/class-woo.php:190
+msgid "Log in"
+msgstr ""
+
+#: inc/class-woo.php:203
+msgid "Login"
+msgstr ""
+
+#: elementor/widgets/logo.php:19
+msgid "Logo"
+msgstr ""
+
+#: inc/class-customize.php:45
+msgid "Logo Default"
+msgstr ""
+
+#: elementor/widgets/icon.php:167
+msgid "Loop"
+msgstr ""
+
+#: elementor/widgets/heading.php:62
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+msgstr ""
+
+#: inc/class-woo.php:182
+msgid "Lost your password?"
+msgstr ""
+
+#: install-resource/active-plugins.php:23
+msgid "Mailchimp for wp"
+msgstr ""
+
+#: inc/class-widgets.php:23 inc/class-widgets.php:25
+msgid "Main Sidebar"
+msgstr ""
+
+#: elementor/widgets/card-image.php:108
+msgid "Make a separate transaction"
+msgstr ""
+
+#: inc/class-elementor.php:455 inc/class-elementor.php:821
+#: inc/class-elementor.php:1014 inc/class-elementor.php:1122
+#: elementor/widgets/card.php:231 elementor/widgets/card.php:274
+#: elementor/widgets/sale-token.php:132 elementor/widgets/sale-token.php:198
+#: elementor/widgets/sale-token.php:239 elementor/widgets/road-map.php:1062
+#: elementor/widgets/icon.php:449 elementor/widgets/icon.php:490
+#: elementor/widgets/icon.php:592 elementor/widgets/card-image.php:422
+#: elementor/widgets/card-image.php:496 elementor/widgets/progress.php:347
+#: elementor/widgets/progress.php:487 elementor/widgets/icon-list.php:271
+#: elementor/widgets/details.php:125 elementor/widgets/details.php:168
+#: elementor/widgets/button-download.php:338
+#: elementor/widgets/button-download.php:425
+#: elementor/widgets/countdown.php:610 elementor/widgets/countdown.php:748
+#: elementor/widgets/countdown.php:828 elementor/widgets/heading.php:238
+#: elementor/widgets/heading.php:320 elementor/widgets/heading.php:509
+#: elementor/widgets/menu-footer.php:134 elementor/widgets/menu-footer.php:232
+#: elementor/widgets/ico-crypto.php:264 elementor/widgets/card-token.php:303
+#: elementor/widgets/card-token.php:376 elementor/widgets/card-token.php:450
+#: elementor/widgets/button.php:262
+msgid "Margin"
+msgstr ""
+
+#: elementor/widgets/progress.php:499
+msgid "Margin Item"
+msgstr ""
+
+#: inc/class-elementor.php:537
+msgid "Margin Mobile"
+msgstr ""
+
+#: inc/class-elementor.php:752
+msgid "Marker Options"
+msgstr ""
+
+#: elementor/widgets/chart.php:95 elementor/widgets/chart.php:155
+msgid "Marketing"
+msgstr ""
+
+#: template-parts/header-default.php:22 elementor/widgets/menu-footer.php:44
+#: elementor/widgets/menu-footer.php:72 elementor/widgets/menu-nav.php:16
+#: elementor/widgets/menu-nav.php:219 elementor/widgets/menu-nav.php:304
+msgid "Menu"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:117
+msgid "Menu Background"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:16
+msgid "Menu Canvas"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:65
+msgid "Menu Direction"
+msgstr ""
+
+#: elementor/widgets/menu-footer.php:20
+msgid "Menu Footer"
+msgstr ""
+
+#: elementor/widgets/countdown.php:335 elementor/widgets/countdown.php:626
+msgid "Message"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: elementor/widgets/countdown.php:261 elementor/widgets/countdown.php:263
+#: elementor/widgets/countdown.php:264
+msgid "Minute"
+msgstr ""
+
+#: elementor/widgets/countdown.php:103 elementor/widgets/countdown.php:106
+#: elementor/widgets/countdown.php:138 elementor/widgets/countdown.php:276
+#: elementor/widgets/countdown.php:278 elementor/widgets/countdown.php:279
+msgid "Minutes"
+msgstr ""
+
+#: inc/class-elementor.php:267
+msgid "Mobile"
+msgstr ""
+
+#: elementor/widgets/logo.php:173
+msgid "Mobile Logo"
+msgstr ""
+
+#: elementor/widgets/logo.php:208
+msgid "Mobile Logo Height"
+msgstr ""
+
+#: elementor/widgets/logo.php:188
+msgid "Mobile Logo Width"
+msgstr ""
+
+#: elementor/widgets/card.php:63 elementor/widgets/card-image.php:70
+#: elementor/widgets/card-token.php:68 elementor/widgets/card-token.php:90
+msgid "Mobile payment make easy"
+msgstr ""
+
+#: elementor/widgets/icon.php:195
+msgid "Modest Branding"
+msgstr ""
+
+#: inc/class-elementor.php:76
+msgid "Move Down"
+msgstr ""
+
+#: inc/class-elementor.php:77
+msgid "Move Left"
+msgstr ""
+
+#: inc/class-elementor.php:78
+msgid "Move Right"
+msgstr ""
+
+#: inc/class-elementor.php:75
+msgid "Move Up"
+msgstr ""
+
+#: elementor/widgets/details.php:52
+msgid "Munber of tokens for sale"
+msgstr ""
+
+#: elementor/widgets/icon.php:153
+msgid "Mute"
+msgstr ""
+
+#: elementor/widgets/progress.php:54
+msgid "My Skill"
+msgstr ""
+
+#: elementor/widgets/choice-language.php:73
+#: elementor/widgets/choice-language.php:93
+msgid "Nation"
+msgstr ""
+
+#: inc/class-customize.php:328 inc/class-customize.php:683
+#: inc/class-customize.php:733 elementor/widgets/road-map.php:87
+#: elementor/widgets/road-map.php:266 elementor/widgets/road-map.php:434
+#: elementor/widgets/road-map.php:596 elementor/widgets/icon.php:142
+#: elementor/widgets/icon.php:156 elementor/widgets/icon.php:170
+#: elementor/widgets/icon.php:184 elementor/widgets/icon.php:198
+#: elementor/widgets/icon.php:212
+msgid "No"
+msgstr ""
+
+#. 1: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-hook.php:221 inc/class-customize.php:642
+#: inc/class-customize.php:710
+msgid "No Sidebar"
+msgstr ""
+
+#: elementor/widgets/card-token.php:95
+msgid "No transaction fee"
+msgstr ""
+
+#: elementor/widgets/logo.php:51
+msgid "None"
+msgstr ""
+
+#: elementor/widgets/card.php:116 elementor/widgets/team.php:165
+#: elementor/widgets/team.php:237 elementor/widgets/road-map.php:108
+#: elementor/widgets/road-map.php:147 elementor/widgets/road-map.php:287
+#: elementor/widgets/road-map.php:326 elementor/widgets/road-map.php:455
+#: elementor/widgets/road-map.php:494 elementor/widgets/road-map.php:617
+#: elementor/widgets/road-map.php:656 elementor/widgets/icon.php:113
+#: elementor/widgets/icon.php:236 elementor/widgets/card-image.php:144
+#: elementor/widgets/card-image.php:287 elementor/widgets/card-image.php:373
+#: elementor/widgets/card-image.php:447 elementor/widgets/icon-list.php:159
+#: elementor/widgets/choice-language.php:131
+#: elementor/widgets/choice-language.php:260
+#: elementor/widgets/choice-language.php:339
+#: elementor/widgets/button-download.php:157
+#: elementor/widgets/button-download.php:208
+#: elementor/widgets/button-download.php:277
+#: elementor/widgets/button-download.php:364
+#: elementor/widgets/button-download.php:451 elementor/widgets/heading.php:175
+#: elementor/widgets/heading.php:273 elementor/widgets/menu-footer.php:93
+#: elementor/widgets/menu-footer.php:191 elementor/widgets/card-token.php:142
+#: elementor/widgets/card-token.php:327 elementor/widgets/card-token.php:401
+#: elementor/widgets/button.php:118 elementor/widgets/button.php:201
+msgid "Normal"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: elementor/widgets/progress.php:421
+msgid "Notes"
+msgstr ""
+
+#: elementor/widgets/countdown.php:324
+msgid "Nothing"
+msgstr ""
+
+#: template-parts/post/content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: install-resource/active-plugins.php:33
+msgid "One click demo import"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:85
+msgid "One Pager"
+msgstr ""
+
+#: elementor/widgets/road-map.php:700 elementor/widgets/chart.php:145
+msgid "Operational"
+msgstr ""
+
+#: elementor/widgets/road-map.php:204
+msgid ""
+"Our founders are going to publish our prototype and link it to Ethereum "
+"blockchain with real-time scanning"
+msgstr ""
+
+#: inc/class-elementor.php:704
+msgid "Ova Accordion"
+msgstr ""
+
+#: inc/class-elementor.php:1140
+msgid "Ova Social Icon"
+msgstr ""
+
+#: inc/class-elementor.php:95
+msgid "Ova Tabs"
+msgstr ""
+
+#: inc/class-elementor.php:1050
+msgid "Ova Toggle"
+msgstr ""
+
+#: elementor/widgets/team.php:137
+msgid "ovaicon-facebook-logo-1"
+msgstr ""
+
+#: elementor/widgets/card.php:53
+msgid "ovaicon-page-blank"
+msgstr ""
+
+#: elementor/widgets/team.php:94 elementor/widgets/team.php:132
+msgid "ovaicon-twitter"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:88
+msgid "ovaicon-user-2"
+msgstr ""
+
+#: install-resource/active-plugins.php:38
+msgid "OvaTheme Framework"
+msgstr ""
+
+#: inc/class-elementor.php:440 inc/class-elementor.php:564
+#: elementor/widgets/card.php:147 elementor/widgets/road-map.php:1049
+#: elementor/widgets/icon.php:475 elementor/widgets/icon.php:579
+#: elementor/widgets/card-image.php:232 elementor/widgets/card-image.php:349
+#: elementor/widgets/progress.php:335 elementor/widgets/progress.php:475
+#: elementor/widgets/icon-list.php:259
+#: elementor/widgets/choice-language.php:231
+#: elementor/widgets/choice-language.php:428
+#: elementor/widgets/button-download.php:250
+#: elementor/widgets/button-download.php:326
+#: elementor/widgets/button-download.php:413
+#: elementor/widgets/button-download.php:533
+#: elementor/widgets/countdown.php:555 elementor/widgets/countdown.php:598
+#: elementor/widgets/countdown.php:736 elementor/widgets/countdown.php:816
+#: elementor/widgets/heading.php:226 elementor/widgets/heading.php:497
+#: elementor/widgets/menu-footer.php:146 elementor/widgets/menu-footer.php:244
+#: elementor/widgets/ico-crypto.php:252 elementor/widgets/menu-nav.php:248
+#: elementor/widgets/menu-nav.php:272 elementor/widgets/card-token.php:230
+#: elementor/widgets/button.php:250
+msgid "Padding"
+msgstr ""
+
+#: inc/class-elementor.php:522
+msgid "Padding Mobile"
+msgstr ""
+
+#: template-parts/page.php:22
+msgid "Page"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:126
+msgid "Page not found"
+msgstr ""
+
+#: template-parts/page.php:18 template-parts/parts/content.php:4
+msgid "Pages:"
+msgstr ""
+
+#: elementor/widgets/menu-nav.php:67
+msgid "Parent Menu"
+msgstr ""
+
+#: elementor/widgets/chart.php:130
+msgid "Partner/Investor"
+msgstr ""
+
+#: elementor/widgets/progress.php:72 elementor/widgets/progress.php:277
+#: elementor/widgets/chart.php:102
+msgid "Percent"
+msgstr ""
+
+#: elementor/widgets/progress.php:363
+msgid "Percentage"
+msgstr ""
+
+#: elementor/widgets/icon.php:115
+msgid "Phone"
+msgstr ""
+
+#: elementor/widgets/chart.php:57
+msgid "Pie"
+msgstr ""
+
+#: elementor/widgets/icon.php:181
+msgid "Player Controls"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:1019
+#: install-resource/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:1206
+#: install-resource/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:394
+#: install-resource/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: number of plugins.
+#: install-resource/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-elementor.php:82
+msgid "PopUp"
+msgstr ""
+
+#: elementor/widgets/progress.php:140
+msgid "Pre Sale"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: elementor/widgets/road-map.php:370
+msgid "Pre-Sale"
+msgstr ""
+
+#: inc/class-customize.php:322
+msgid "Preload"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:67 elementor/widgets/sale-token.php:213
+msgid "Price"
+msgstr ""
+
+#: inc/class-customize.php:269
+msgid "Primary"
+msgstr ""
+
+#: inc/class-customize.php:160 inc/class-customize.php:176
+msgid "Primary Font"
+msgstr ""
+
+#: inc/class-main.php:86
+msgid "Primary Menu"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:81
+msgid "Privaci & Policy"
+msgstr ""
+
+#: inc/class-customize.php:690
+msgid "Product detail"
+msgstr ""
+
+#: elementor/widgets/chart.php:150
+msgid "Product Develoment"
+msgstr ""
+
+#: elementor/widgets/progress.php:21 elementor/widgets/progress.php:44
+msgid "Progress"
+msgstr ""
+
+#: elementor/widgets/progress.php:163
+msgid "Progress Bar"
+msgstr ""
+
+#: elementor/widgets/card-token.php:100
+msgid "Protect the identity"
+msgstr ""
+
+#: template-parts/parts/readmore.php:2
+msgid "Read more"
+msgstr ""
+
+#: template-parts/post/content-none.php:10
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: elementor/widgets/card-image.php:97
+msgid "Reclaiming disk space"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: elementor/widgets/countdown.php:326
+msgid "Redirect"
+msgstr ""
+
+#: elementor/widgets/countdown.php:351
+msgid "Redirect URL"
+msgstr ""
+
+#: inc/class-woo.php:209
+msgid "Register"
+msgstr ""
+
+#: inc/class-woo.php:174
+msgid "Remember me"
+msgstr ""
+
+#: elementor/widgets/card-image.php:98
+msgid "Remove old transactions"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: elementor/widgets/road-map.php:364
+msgid "Research"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:393
+#: install-resource/class-tgm-plugin-activation.php:912
+#: install-resource/class-tgm-plugin-activation.php:2618
+#: install-resource/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:97
+msgid "Rewards MeAchanism"
+msgstr ""
+
+#: inc/class-elementor.php:131 inc/class-elementor.php:630
+#: elementor/widgets/card.php:91 elementor/widgets/sale-token.php:88
+#: elementor/widgets/icon.php:752 elementor/widgets/menu-canvas.php:73
+#: elementor/widgets/progress.php:237 elementor/widgets/details.php:80
+#: elementor/widgets/button-download.php:79 elementor/widgets/countdown.php:514
+#: elementor/widgets/countdown.php:664 elementor/widgets/countdown.php:795
+#: elementor/widgets/heading.php:116 elementor/widgets/chart.php:191
+#: elementor/widgets/header-banner.php:298 elementor/widgets/logo.php:89
+#: elementor/widgets/button.php:91
+msgid "Right"
+msgstr ""
+
+#: inc/class-hook.php:222 inc/class-customize.php:643
+#: inc/class-customize.php:711
+msgid "Right Sidebar"
+msgstr ""
+
+#: elementor/widgets/road-map.php:21 elementor/widgets/road-map.php:43
+msgid "Road Map"
+msgstr ""
+
+#: elementor/widgets/sale-token.php:19
+msgid "Sale Token"
+msgstr ""
+
+#: inc/class-elementor.php:79
+msgid "Scale Up"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs_title.php:17
+msgid "Search"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs.php:68
+msgid "Search results for"
+msgstr ""
+
+#: template-parts/search.php:7
+msgid "Search Results for: "
+msgstr ""
+
+#: elementor/widgets/countdown.php:291 elementor/widgets/countdown.php:293
+#: elementor/widgets/countdown.php:294
+msgid "Second"
+msgstr ""
+
+#: elementor/widgets/countdown.php:149 elementor/widgets/countdown.php:306
+#: elementor/widgets/countdown.php:308 elementor/widgets/countdown.php:309
+msgid "Seconds"
+msgstr ""
+
+#: elementor/widgets/card-token.php:105
+msgid "Security and control over money"
+msgstr ""
+
+#: widgets/categories.php:39
+msgid "Select Category"
+msgstr ""
+
+#: widgets/archives.php:59
+msgid "Select Day"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:54 elementor/widgets/menu-footer.php:58
+#: elementor/widgets/menu-nav.php:50
+msgid "Select Menu"
+msgstr ""
+
+#: widgets/archives.php:56
+msgid "Select Month"
+msgstr ""
+
+#: widgets/archives.php:65
+msgid "Select Post"
+msgstr ""
+
+#: widgets/archives.php:62
+msgid "Select Week"
+msgstr ""
+
+#: widgets/archives.php:53
+msgid "Select Year"
+msgstr ""
+
+#: elementor/widgets/road-map.php:255 elementor/widgets/road-map.php:423
+#: elementor/widgets/road-map.php:585
+msgid "Separated by commas(,)"
+msgstr ""
+
+#: template-parts/parts/tags.php:12
+msgid "Share: "
+msgstr ""
+
+#: elementor/widgets/road-map.php:219 elementor/widgets/road-map.php:387
+#: elementor/widgets/road-map.php:549 elementor/widgets/countdown.php:79
+#: elementor/widgets/countdown.php:118 elementor/widgets/countdown.php:129
+#: elementor/widgets/countdown.php:140 elementor/widgets/countdown.php:151
+#: elementor/widgets/countdown.php:162 elementor/widgets/countdown.php:369
+#: elementor/widgets/heading.php:137 elementor/widgets/ico-crypto.php:112
+msgid "Show"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:211
+msgid "Show Breadcrumbs"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3594
+msgid "Show Details"
+msgstr ""
+
+#: elementor/widgets/icon.php:209
+msgid "Show Info"
+msgstr ""
+
+#: elementor/widgets/road-map.php:217
+msgid "Show Item 1"
+msgstr ""
+
+#: elementor/widgets/road-map.php:385
+msgid "Show Item 2"
+msgstr ""
+
+#: elementor/widgets/road-map.php:547
+msgid "Show Item 3"
+msgstr ""
+
+#: elementor/widgets/countdown.php:160
+msgid "Show Label"
+msgstr ""
+
+#: elementor/widgets/countdown.php:327
+msgid "Show Message"
+msgstr ""
+
+#: elementor/widgets/progress.php:94
+msgid "Show Notes"
+msgstr ""
+
+#: elementor/widgets/progress.php:84
+msgid "Show Percent"
+msgstr ""
+
+#: elementor/widgets/progress.php:62 elementor/widgets/header-banner.php:139
+msgid "Show Title"
+msgstr ""
+
+#: elementor/widgets/countdown.php:83
+msgid "Show/Hide if time = 0."
+msgstr ""
+
+#: inc/class-customize.php:677 inc/class-customize.php:727
+msgid "Show/Hide Title"
+msgstr ""
+
+#: inc/class-customize.php:376 inc/class-customize.php:660
+msgid "Sidebar Width (px)"
+msgstr ""
+
+#: elementor/widgets/card-image.php:102
+msgid "Simplified payment verification"
+msgstr ""
+
+#: inc/class-customize.php:566
+msgid "Single"
+msgstr ""
+
+#: inc/class-customize.php:705
+msgid "Single Layout"
+msgstr ""
+
+#: elementor/widgets/road-map.php:107 elementor/widgets/road-map.php:146
+#: elementor/widgets/road-map.php:286 elementor/widgets/road-map.php:325
+#: elementor/widgets/road-map.php:454 elementor/widgets/road-map.php:493
+#: elementor/widgets/road-map.php:616 elementor/widgets/road-map.php:655
+msgid "Slow"
+msgstr ""
+
+#: elementor/widgets/team.php:126
+msgid "Social Icons"
+msgstr ""
+
+#: elementor/widgets/progress.php:143
+msgid "Soft Cap"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/search.php:29
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/page.php:30
+msgid "Sorry, no pages matched your criteria."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: elementor/widgets/card-image.php:185 elementor/widgets/icon-list.php:120
+#: elementor/widgets/countdown.php:485 elementor/widgets/card-token.php:183
+msgid "Space Between"
+msgstr ""
+
+#: elementor/widgets/road-map.php:1075
+msgid "Space Between Item"
+msgstr ""
+
+#: elementor/widgets/image-gallery.php:128
+msgid "Spacing"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: inc/class-customize.php:234
+msgid ""
+"Step 1: Insert font-face in style.css file: Refer https://www.w3schools."
+"com/cssref/css3_pr_font-face_rule.asp. Step 2: Insert font-family and font-"
+"weight like format: \n"
+"\t\t\t\t\t\t\t[\"Perpetua\", \"Regular:Bold:Italic:Light\"] | [\"Name-Font\","
+" \"Regular:Bold:Italic:Light\"]. Step 3: Refresh customize page to display "
+"new font in dropdown font field."
+msgstr ""
+
+#: elementor/widgets/logo.php:240
+msgid "Sticky Logo"
+msgstr ""
+
+#: elementor/widgets/logo.php:277
+msgid "Sticky Logo Height"
+msgstr ""
+
+#: elementor/widgets/logo.php:257
+msgid "Sticky Logo Width"
+msgstr ""
+
+#: elementor/widgets/menu-canvas.php:89
+msgid "Style"
+msgstr ""
+
+#: elementor/widgets/menu-footer.php:170 elementor/widgets/menu-nav.php:132
+msgid "Sub Menu"
+msgstr ""
+
+#: elementor/widgets/team.php:80
+msgid "Sub Title"
+msgstr ""
+
+#: template-parts/parts/breadcrumbs_title.php:25
+msgid "Tags"
+msgstr ""
+
+#: elementor/widgets/team.php:22
+msgid "Team"
+msgstr ""
+
+#: elementor/widgets/team.php:346
+msgid "team"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:77
+msgid "Terms Of Coin Sale"
+msgstr ""
+
+#: inc/class-customize.php:292 elementor/widgets/icon.php:87
+#: elementor/widgets/icon.php:509 elementor/widgets/progress.php:106
+msgid "Text"
+msgstr ""
+
+#: inc/class-customize.php:88
+msgid "Text Font"
+msgstr ""
+
+#: elementor/widgets/heading.php:251 elementor/widgets/heading.php:522
+#: elementor/widgets/button.php:275
+msgid "Text Shadow"
+msgstr ""
+
+#. %s: version number
+#: install-resource/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:395
+#: install-resource/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:371
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:365
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:89
+msgid ""
+"The platform helps investors to make easy to purchase and sell their tokens"
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:94
+msgid "The process of taking into account the collective opinion of a group"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: elementor/widgets/ico-crypto.php:99
+msgid "The system pay a bonus for excellent individuals"
+msgstr ""
+
+#: elementor/widgets/card-image.php:93
+msgid "The timestamp server is top notch"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:359
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: elementor/widgets/card-image.php:80 elementor/widgets/card-token.php:78
+#: elementor/widgets/card-token.php:91
+msgid ""
+"There's no need to sign up, you can use a mobile device to pay with the most "
+"simple steps"
+msgstr ""
+
+#: elementor/widgets/road-map.php:184
+msgid ""
+"This is the period of time we spent most of time to research, made a "
+"strategy and completed our whitepaper"
+msgstr ""
+
+#: inc/class-customize.php:441 inc/class-customize.php:469
+msgid "This isn't effect in Blog"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:347
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:341
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: elementor/widgets/road-map.php:84 elementor/widgets/road-map.php:263
+#: elementor/widgets/road-map.php:431 elementor/widgets/road-map.php:593
+msgid "Timeline Done"
+msgstr ""
+
+#: elementor/widgets/card-image.php:92
+msgid "Timestamp server"
+msgstr ""
+
+#: elementor/widgets/card.php:60 elementor/widgets/card.php:204
+#: elementor/widgets/team.php:71 elementor/widgets/road-map.php:244
+#: elementor/widgets/road-map.php:412 elementor/widgets/road-map.php:574
+#: elementor/widgets/card-image.php:68 elementor/widgets/card-image.php:363
+#: elementor/widgets/progress.php:51 elementor/widgets/progress.php:308
+#: elementor/widgets/icon-list.php:59 elementor/widgets/icon-list.php:232
+#: elementor/widgets/details.php:49 elementor/widgets/details.php:98
+#: elementor/widgets/button-download.php:49
+#: elementor/widgets/button-download.php:267
+#: elementor/widgets/countdown.php:367 elementor/widgets/countdown.php:378
+#: elementor/widgets/countdown.php:764 elementor/widgets/heading.php:51
+#: elementor/widgets/heading.php:165 elementor/widgets/ico-crypto.php:64
+#: elementor/widgets/ico-crypto.php:225 elementor/widgets/card-token.php:65
+#: elementor/widgets/card-token.php:317 elementor/widgets/button.php:55
+#: elementor/widgets/button.php:192
+msgid "Title"
+msgstr ""
+
+#: inc/class-elementor.php:1077
+msgid "Title Active"
+msgstr ""
+
+#: elementor/widgets/road-map.php:1009 elementor/widgets/header-banner.php:149
+msgid "Title Color"
+msgstr ""
+
+#: elementor/widgets/team.php:116
+msgid "Title Icon"
+msgstr ""
+
+#: elementor/widgets/road-map.php:1034
+msgid "Title Margin"
+msgstr ""
+
+#: inc/class-elementor.php:809
+msgid "Title Options"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:165
+msgid "Title Padding"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:199
+msgid "Title Typo"
+msgstr ""
+
+#. 1: number of plugins.
+#: install-resource/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: install-resource/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: elementor/widgets/road-map.php:532
+msgid "Token sale"
+msgstr ""
+
+#: inc/class-elementor.php:664 inc/class-elementor.php:881
+#: elementor/widgets/icon.php:720 elementor/widgets/icon.php:871
+#: elementor/widgets/icon.php:954 elementor/widgets/progress.php:390
+#: elementor/widgets/progress.php:440 elementor/widgets/countdown.php:176
+#: elementor/widgets/heading.php:151 elementor/widgets/heading.php:362
+msgid "Top"
+msgstr ""
+
+#: elementor/widgets/team.php:131
+msgid "Twitter"
+msgstr ""
+
+#: inc/class-customize.php:503
+#: install-resource/class-tgm-plugin-activation.php:2634
+#: elementor/widgets/road-map.php:50 elementor/widgets/icon.php:53
+#: elementor/widgets/icon.php:110 elementor/widgets/choice-language.php:60
+#: elementor/widgets/countdown.php:50 elementor/widgets/heading.php:146
+#: elementor/widgets/chart.php:53
+msgid "Type"
+msgstr ""
+
+#: elementor/widgets/road-map.php:53 elementor/widgets/icon.php:56
+#: elementor/widgets/choice-language.php:63
+msgid "Type 1"
+msgstr ""
+
+#: elementor/widgets/road-map.php:54 elementor/widgets/icon.php:57
+#: elementor/widgets/choice-language.php:64
+msgid "Type 2"
+msgstr ""
+
+#: inc/class-customize.php:59
+msgid "Typography"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: install-resource/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: install-resource/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: install-resource/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: install-resource/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: install-resource/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: elementor/widgets/card-image.php:103
+msgid "verify payment without running a full node"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: elementor/widgets/icon.php:89
+msgid "Video intro"
+msgstr ""
+
+#: elementor/widgets/icon.php:127
+msgid "Video Options"
+msgstr ""
+
+#: elementor/widgets/card-token.php:106
+msgid ""
+"We can provide high levels of security that allows the user to keep control "
+"over their money"
+msgstr ""
+
+#: elementor/widgets/road-map.php:199
+msgid ""
+"We open global sales of ICOblock token, so all investors on the globe can "
+"purchase and sell our ICO easily"
+msgstr ""
+
+#: elementor/widgets/road-map.php:194
+msgid ""
+"We published  financing & Seed funding raised, so investors could track and "
+"know funding raising process"
+msgstr ""
+
+#: elementor/widgets/icon-list.php:73
+msgid "White Paper"
+msgstr ""
+
+#: inc/class-hook.php:315
+msgid "Wide"
+msgstr ""
+
+#: inc/class-customize.php:395
+msgid "Wide Site"
+msgstr ""
+
+#: install-resource/active-plugins.php:28
+msgid "Widget importer exporter"
+msgstr ""
+
+#: inc/class-elementor.php:778 inc/class-elementor.php:912
+#: elementor/widgets/icon.php:335 elementor/widgets/icon.php:656
+#: elementor/widgets/card-image.php:254 elementor/widgets/progress.php:193
+#: elementor/widgets/countdown.php:423 elementor/widgets/countdown.php:677
+#: elementor/widgets/heading.php:414 elementor/widgets/chart.php:205
+#: elementor/widgets/ico-crypto.php:161 elementor/widgets/card-token.php:252
+msgid "Width"
+msgstr ""
+
+#: inc/class-widgets.php:36 inc/class-widgets.php:38
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: install-resource/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-customize.php:327 inc/class-customize.php:682
+#: inc/class-customize.php:732 elementor/widgets/road-map.php:86
+#: elementor/widgets/road-map.php:265 elementor/widgets/road-map.php:433
+#: elementor/widgets/road-map.php:595 elementor/widgets/icon.php:141
+#: elementor/widgets/icon.php:155 elementor/widgets/icon.php:169
+#: elementor/widgets/icon.php:183 elementor/widgets/icon.php:197
+#: elementor/widgets/icon.php:211
+msgid "Yes"
+msgstr ""
+
+#: elementor/widgets/header-banner.php:123
+msgid "You can add background image in Advanced Tab"
+msgstr ""
+
+#: elementor/widgets/card-token.php:96
+msgid ""
+"You can buy tokens how much you want without paying any transaction fee for "
+"our system"
+msgstr ""
+
+#: elementor/widgets/card.php:73
+msgid "You can use a mobile device to pay with simple steps"
+msgstr ""
+
+#: template-parts/parts/comment.php:21
+msgid "Your comment is awaiting moderation."
+msgstr ""

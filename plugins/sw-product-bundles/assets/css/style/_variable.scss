@@ -1,0 +1,153 @@
+//Variable
+@mixin transition-all($time) {
+  transition: all $time;
+  -webkit-transition: all $time;
+  -moz-transition: all $time;
+  -o-transition: all $time;
+  -ms-transition: all $time;
+}
+
+@mixin transition($val) {
+  transition: $val;
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  -ms-transition: $val;
+}
+
+@mixin transition-delay($val) {
+  -webkit-transition-delay: $val;
+  transition-delay: $val;
+}
+
+@mixin border-radius($val) {
+  border-radius: $val;
+  -moz-border-radius: $val;
+  -o-border-radius: $val;
+  -webkit-border-radius: $val;
+  -ms-border-radius: $val;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+  transform: $val;
+}
+@-webkit-keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes aoe-zoom-in {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes aoe-zoom-in {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes aoe-zoom-in {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+:root {
+  --default-color: #00599c;
+  --second-color: #6c757d;
+
+  --main-color: #333;
+  --black-color: #000;
+  --white-color: #fff;
+
+  --title-color: #333;
+  --title-color-hover: #222;
+
+  --box-shadow: #eae7f5;
+  --border-color: #ebebeb;
+  --bg-block: #f5f5f5;
+  --gray-color: #a9a9a9;
+  --dark-gray-color: #808080;
+  --light-gray-color: #d3d3d3;
+
+  --light-color: #f9fafb;
+  --light-color-hover: #f9fafb;
+  --dark-color: #212529;
+  --dark-color-hover: #1c1f23;
+  --info-color: #0dcaf0;
+  --info-color-hover: #3dd5f3;
+  --primary-color: #0d6efd;
+  --primary-color-hover: #0b5ed7;
+  --success-color: #28a745;
+  --success-color-hover: #218838;
+  --warning-color: #ffc107;
+  --warning-color-hover: #d39e00;
+  --danger-color: #dc3545;
+  --danger-color-hover: #bb2d3b;
+
+  --price-color: #ff3329;
+  --sale-color: #ff3329;
+  --star-color: #ffc107;
+
+  // black transparent
+  --black-transparent-1: rgba(0, 0, 0, 0.1);
+  --black-transparent-2: rgba(0, 0, 0, 0.2);
+  --black-transparent-3: rgba(0, 0, 0, 0.3);
+  --black-transparent-4: rgba(0, 0, 0, 0.4);
+  --black-transparent-5: rgba(0, 0, 0, 0.5);
+  --black-transparent-6: rgba(0, 0, 0, 0.6);
+  --black-transparent-7: rgba(0, 0, 0, 0.7);
+  --black-transparent-8: rgba(0, 0, 0, 0.8);
+  --black-transparent-9: rgba(0, 0, 0, 0.9);
+
+  // white transparent
+  --white-transparent-1: rgba(255, 255, 255, 0.1);
+  --white-transparent-2: rgba(255, 255, 255, 0.2);
+  --white-transparent-3: rgba(255, 255, 255, 0.3);
+  --white-transparent-4: rgba(255, 255, 255, 0.4);
+  --white-transparent-5: rgba(255, 255, 255, 0.5);
+  --white-transparent-6: rgba(255, 255, 255, 0.6);
+  --white-transparent-7: rgba(255, 255, 255, 0.7);
+  --white-transparent-8: rgba(255, 255, 255, 0.8);
+  --white-transparent-9: rgba(255, 255, 255, 0.9);
+
+  // padding col
+  --padding-swe-col: 10px;
+  --margin-swe-col: -10px;
+}

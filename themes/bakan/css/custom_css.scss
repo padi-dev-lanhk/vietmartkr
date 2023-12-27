@@ -1,0 +1,126 @@
+*, html{
+	outline: none !important;
+}
+
+.top-banner .elementor-section{
+	margin-top: 0 !important;
+}
+.top-banner .elementor-section .elementor-widget-wrap.elementor-element-populated{
+	padding: 0 !important;
+}
+.top-banner{
+	position: relative;
+	.elementor-widget{
+		margin-bottom: 0 !important;
+	}
+	.elementor-widget-image{
+		a{
+			display: inline-block;
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.top-banner-button{
+		position: absolute;
+		left: 30px;
+		bottom: 20px;
+		a{
+			background: #fff;
+			color: #222;
+			text-transform: uppercase;
+			min-width: 160px;
+    		padding: 15px 45px;
+    		border-radius: 6px;
+    		transition: all 0.3s;
+    		&:hover{
+    			background: #111;
+    			color: #fff;
+    			transition: all 0.3s;
+    		}
+		}
+	}
+	.top-banner-title{
+		position: absolute;
+		left: 30px;
+		bottom: 80px;
+		h4{
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #fff;
+			font-size: 28px;
+		}
+	}
+}
+.swe-wrap-head{
+	.swe-title{
+		color: #111 !important;
+		text-transform: uppercase;
+	}
+}
+.item .item-wrap .item-detail{
+	border: 1px solid #ddd9d9;
+}
+.policy-banner{
+	.top-banner-title{
+		margin-bottom: 10px;
+		h4,
+		h3{
+			text-align: center;
+			color: #111;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
+	.top-banner-button{
+		text-align: center;
+		a{
+			background: #222;
+			border: 1px solid #111;
+			color: #fff;
+			text-transform: uppercase;
+			min-width: 160px;
+			padding: 15px 45px;
+			border-radius: 6px;
+			transition: all 0.3s;
+			&:hover{
+				background: #fff;
+				border: 1px solid #111;
+				color: #111;
+				transition: all 0.3s;
+			}
+		}
+	}
+}
+.sec-about .elementor-widget-wrap{
+	display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  align-items: flex-start;
+	  padding: 0 !important;
+  	.elementor-heading-title{
+	  	color: #111;
+	  	font-size: 20px;
+  	}
+  	p{
+  		color: #111;
+  	}
+  	a{
+		background: #222;
+		border: 1px solid #111;
+		color: #fff;
+		text-transform: uppercase;
+		min-width: 160px;
+		padding: 15px 45px;
+		border-radius: 6px;
+		transition: all 0.3s;
+		&:hover{
+			background: #fff;
+			border: 1px solid #111;
+			color: #111;
+			transition: all 0.3s;
+		}
+	}
+}

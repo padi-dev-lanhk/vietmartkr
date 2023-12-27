@@ -1,0 +1,148 @@
+.swe-wrap-post {
+	.swe-wrap-head {
+		display: flex;
+	}
+	&.image-left {
+		.swe-wrap-item {
+			display: flex;
+			.swe-wrap-image {
+				flex: 1;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.swe-wrap-content {
+				padding-top: 0px;
+				padding-left: 15px;
+				flex: 1;
+				text-align: left;
+			}
+		}
+	}
+	&.content-overlay {
+		.swe-wrap-item {
+			position: relative;
+			.swe-wrap-image {
+				margin-bottom: 0;
+			}
+			.swe-wrap-content {
+				padding: 15px 20px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
+	a {
+		color: var(--title-color);
+		text-decoration: none;
+		font-weight: 500;
+		&:hover {
+			color: var(--title-color-hover);
+		}
+	}
+	.swe-wrap-item {
+		height: 100%;
+		transition: 300ms;
+	}
+	.swe-wrap-image {
+		transition: 300ms;
+		position: relative;
+		img {
+			margin-bottom: 0px;
+			transition: 300ms;
+		}
+	}
+	.swe-wrap-content {
+		padding-top: 15px;
+	}
+	.swe-title {
+		margin-bottom: 10px;
+		a {
+			display: block;
+		}
+	}
+	.post-info {
+		margin: 0;
+		margin-bottom: 10px;
+		list-style: none;
+		display: block;
+		li {
+			display: inline;
+			+ li {
+				margin-left: 5px;
+			}
+		}
+	}
+	.swe-description {
+		margin-bottom: 15px;
+	}
+
+	&-list {
+		.swe-wrap-item {
+			display: flex;
+			text-align: left;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			border-bottom: 1px solid var(--border-color);
+			.swe-wrap-image {
+				margin-right: 15px;
+				min-width: 100px;
+				width: 100px;
+				height: 100px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.swe-wrap-content {
+				padding-top: 0px;
+				flex: 1;
+			}
+		}
+	}
+}
+
+
+.elementor-element-edit-mode {
+	.swe-wrap-post-masonry {
+		.posts {
+			height: auto !important;
+		}
+	}
+}
+
+.swe-post-category-block-random {
+	@media (min-width: 1025px) {
+		.swe-wrap-tab-head {
+			position: absolute !important;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 10;
+			.swe-tab-head {
+				flex-direction: column;
+				.swe-tab-title + .swe-tab-title {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+	.swe-tab-content {
+		height: 100%;
+	}
+	.posts {
+		height: 100%;
+		align-items: center;
+		width: 100% !important;
+		margin-left: 0px;
+		margin-right: 0px;
+		.post:hover {
+			z-index: 999;
+		}
+	}
+}
