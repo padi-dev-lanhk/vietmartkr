@@ -18,7 +18,7 @@ class Product_Add_To_Cart extends Base_Widget {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Add To Cart', 'elementor-pro' );
+		return esc_html__( 'Thêm vào giỏ hàng', 'elementor-pro' );
 	}
 
 	public function get_icon() {

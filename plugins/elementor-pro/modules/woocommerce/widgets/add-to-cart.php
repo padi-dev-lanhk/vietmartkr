@@ -135,8 +135,8 @@ class Add_To_Cart extends Widget_Button {
 		$this->update_control(
 			'text',
 			[
-				'default' => esc_html__( 'Add to Cart', 'elementor-pro' ),
-				'placeholder' => esc_html__( 'Add to Cart', 'elementor-pro' ),
+				'default' => esc_html__( 'Thêm vào giỏ hàng', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'Thêm vào giỏ hàng', 'elementor-pro' ),
 			]
 		);
 
