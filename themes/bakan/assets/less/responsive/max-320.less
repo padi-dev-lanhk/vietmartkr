@@ -1,0 +1,32 @@
+@media (max-width: 320px) {
+	.resmenu-container.resmenu-container-sidebar .menu-responsive-wrapper{
+		min-width: 280px;
+	}
+	.top-login ul li{
+		font-size: 0;
+		span{
+			font-size: 12px;
+		}
+		a{
+			font-size: 14px;
+		}
+		.register{
+			font-size: 0;
+		}
+	}
+	.product_detail .content_product_detail {
+		.add_to_cart_button,
+		.product_type_external,
+		.product_type_grouped, 
+		.single_add_to_cart_button,
+		.wc-variation-is-unavailable{
+			padding: 0 10px;
+			.rtl &{
+				padding: 0 10px;
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,202 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SW Add To Cart Notification\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-20 08:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.3\n"
+"X-Domain: sw-add-to-cart-notification"
+
+#: includes/class-admin-settings.php:56
+msgid "3"
+msgstr ""
+
+#: includes/class-admin-settings.php:17
+msgid "Add To Cart Notification"
+msgstr ""
+
+#: includes/class-admin-settings.php:33
+msgid "Add to cart Notification"
+msgstr ""
+
+#. Description of the plugin
+msgid "An ultimate addon for Woocommerce."
+msgstr ""
+
+#: includes/templates/layout-5.php:57 includes/templates/layout-default.php:43
+msgid "Checkout"
+msgstr ""
+
+#: includes/templates/layout-2.php:21 includes/templates/layout-3.php:28
+#: includes/templates/layout-5.php:51 includes/templates/layout-default.php:49
+msgid "Continue Shopping"
+msgstr ""
+
+#: includes/templates/layout-4.php:32
+#, php-format
+msgid "Continue Shopping (%s)"
+msgstr ""
+
+#: includes/class-admin-settings.php:41
+msgid "Default"
+msgstr ""
+
+#: includes/class-admin-settings.php:110
+msgid "Hidden Button Checkout"
+msgstr ""
+
+#: includes/class-admin-settings.php:118
+msgid "Hidden Button Continue Shopping"
+msgstr ""
+
+#: includes/class-admin-settings.php:102
+msgid "Hidden Button View Cart"
+msgstr ""
+
+#: includes/class-admin-settings.php:86
+msgid "Hidden Price"
+msgstr ""
+
+#: includes/class-admin-settings.php:78
+msgid "Hidden Product Name"
+msgstr ""
+
+#: includes/class-admin-settings.php:94
+msgid "Hidden quantity"
+msgstr ""
+
+#: includes/class-admin-settings.php:70
+msgid "Hidden Thumbnail"
+msgstr ""
+
+#: includes/class-admin-settings.php:112
+msgid "Hide button checkout if you check"
+msgstr ""
+
+#: includes/class-admin-settings.php:120
+msgid "Hide button continue shopping if you check"
+msgstr ""
+
+#: includes/class-admin-settings.php:104
+msgid "Hide button view cart if you check"
+msgstr ""
+
+#: includes/class-admin-settings.php:88
+msgid "Hide price if you check"
+msgstr ""
+
+#: includes/class-admin-settings.php:80
+msgid "Hide product name if you check"
+msgstr ""
+
+#: includes/class-admin-settings.php:96
+msgid "Hide quantity if you check"
+msgstr ""
+
+#: includes/class-admin-settings.php:73
+msgid "Hide thumbnail if you check"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpthemego.com/"
+msgstr ""
+
+#: includes/class-admin-settings.php:38
+msgid "Layout"
+msgstr ""
+
+#: includes/class-admin-settings.php:42
+msgid "Layout 2"
+msgstr ""
+
+#: includes/class-admin-settings.php:43
+msgid "Layout 3"
+msgstr ""
+
+#: includes/class-admin-settings.php:44
+msgid "Layout 4"
+msgstr ""
+
+#: includes/class-admin-settings.php:45
+msgid "Layout 5"
+msgstr ""
+
+#: includes/templates/layout-default.php:45
+msgid "Order subtotal"
+msgstr ""
+
+#: includes/templates/layout-4.php:33
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: includes/templates/layout-4.php:28 includes/templates/layout-5.php:37
+#: includes/templates/layout-default.php:37
+#, php-format
+msgid "QTY: %s"
+msgstr ""
+
+#: includes/templates/layout-5.php:49
+msgid "Subtotal:"
+msgstr ""
+
+#: includes/class-admin-settings.php:64 includes/templates/layout-4.php:15
+#: includes/templates/layout-5.php:13 includes/templates/layout-default.php:13
+msgid "Successfully added to your cart."
+msgstr ""
+
+#. Name of the plugin
+msgid "SW Add To Cart Notification"
+msgstr ""
+
+#: includes/class-admin-settings.php:57
+msgid "The notification will close when the time reaches 0."
+msgstr ""
+
+#: includes/templates/layout-5.php:46
+#, php-format
+msgid "There are %s item in your cart"
+msgstr ""
+
+#: includes/templates/layout-5.php:44
+#, php-format
+msgid "There are %s items in your cart"
+msgstr ""
+
+#: includes/class-admin-settings.php:54
+msgid "Time countdown"
+msgstr ""
+
+#: includes/class-admin-settings.php:62
+msgid "Title"
+msgstr ""
+
+#: includes/class-admin-settings.php:65
+msgid "Title when you successfully added product"
+msgstr ""
+
+#: includes/templates/layout-2.php:22 includes/templates/layout-3.php:29
+#: includes/templates/layout-5.php:54 includes/templates/layout-default.php:52
+msgid "View Cart"
+msgstr ""
+
+#: includes/templates/layout-5.php:92
+msgid "You may also like"
+msgstr ""
+
+#: includes/templates/layout-default.php:47
+#, php-format
+msgid "Your cart contains %s items"
+msgstr ""
+
+#. Author of the plugin
+msgid "YouTech"
+msgstr ""
